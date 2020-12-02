@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "seraphic": {
+        "full": "Seraphic Miracle",
+        "short": "Sera.",
+        "color": "581845"
+      }
+    },
+    "dateAdded": 1599001928
+  },
+  "spell": [
+    {
+      "name": "Worldweaver",
+      "source": "jbassin",
+      "level": 10,
+      "school": "seraphic",
+      "test": "test",
+      "time": [
+        {
+          "number": 1,
+          "unit": "days"
+        }
+      ],
+      "range": {
+        "type": "special"
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sliver of Ruin and a slice of Preservation"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Casters",
+              "entries": [
+                "This miracle requires the arcane efforts of sixteen spellcasters with the capability to cast 9th level spells in any exotic school of magic. All of the casters' spell slots are expended upon a successful casting."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Preparation",
+              "entries": [
+                "A magic circle 30 feet in diameter must be drawn on a level surface with alchemical chalk. An eight-pointed star must be inscribed in the center of the circle, with the casters standing equally spaced in a ring around the star. The sliver and slice are intertwined and laid in the center of the star. The material components are consumed at the end of the casting time."
+              ]
+            }
+          ]
+        },
+        "A miracle powered by the essence of the world itself, with the power to rewrite history. Once finished casting the cosmos resets, going back to before creation and progressing from then until the current time. Each caster can change one event while time progresses, such as \"this person is never born\" or \"this battle is won by the other side.\" The cosmos continues with those changes as the new reality. There is no limit on the scope of the change -- so long as it is a single change per caster -- and the consequential events can compound greatly."
+      ]
+    }
+  ]
+}

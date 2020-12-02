@@ -1,0 +1,14 @@
+{
+    "toImport": [
+        "antillurgy.json",
+        "mercuromancy.json",
+        "gestalt.json",
+        "kosmoturgy.json",
+        "chronomancy.json",
+        "memetics.json",
+        "planara.json",
+        "seeker.json",
+        "seraphic.json",
+        "tfc.json"
+    ]
+}

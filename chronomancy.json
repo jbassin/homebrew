@@ -1,0 +1,1564 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "chronomancy": {
+        "full": "Chronomancy",
+        "short": "Chro.",
+        "color": "34495e"
+      }
+    },
+    "dateAdded": 1598805265
+  },
+  "spell": [
+    {
+      "name": "Anomalous Object",
+      "level": 7,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "page": 8,
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "an hourglass"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "By touching an object, you retrieve another version of the object from elsewhere in time. You must select the exact time that you retrieve the object from. If the object is attended, you must succeed on a melee spell attack roll against the creature holding or controlling the object. Any effect that affects the original object also affects the duplicate (charges spent, damage taken, etc.) and any effect that affects the duplicate also affects the original object. If either object is destroyed, both are destroyed."
+      ],
+      "spellAttack": [
+        "M"
+      ]
+    },
+    {
+      "name": "Celestial Preservation",
+      "source": "jbassin",
+      "level": 4,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a cracked lens"
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "dispel",
+            "trigger"
+          ]
+        }
+      ],
+      "meta": {
+        "ritual": true
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You can cast this spell only at night. You memorialize a dead creature you touch, turning it into a constellation, provided that it has been dead no longer than 1 day. The target's body dissolves into stardust and rises into the sky.",
+        "The spell effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as {@spell raise dead}. A spell that targets the dead but usually requires a body can be cast targeting this constellation instead, provided the spell is cast at night and the caster can see the target's constellation. If the target of this spell is returned to life, this spell ends and the constellation fades."
+      ]
+    },
+    {
+      "name": "Checkpoint",
+      "source": "jbassin",
+      "level": 9,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a shard of Lasinium worth at least 1,000 gold pieces, which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a checkpoint of a creature you touch at full health. If the creature drops unconscious during the duration of this spell, it revives back to full health at the beginning of its next turn. The spell ends once the creature is revived."
+      ]
+    },
+    {
+      "name": "Chrysalis",
+      "source": "jbassin",
+      "level": 6,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a cocoon"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You drastically speed up the flow of time for a willing creature, allowing it to take a long rest in the span of one hour. The target of this spell becomes wrapped in a thick but fragile cocoon. While in the cocoon, the subject doesn't need to eat or drink. At the end of the hour, it emerges from the cocoon as if it had just completed a long rest. While within the cocoon, however, the creature is completely cut off from outside stimuli.",
+        "The chrysalis has 1 hit point and AC 10. If it is destroyed, the spell ends and the creature is {@condition stunned} until the end of its next turn. If the spell is ended in this fashion, the creature does not get the benefits of a long rest."
+      ],
+      "conditionInflict": [
+        "stunned"
+      ]
+    },
+    {
+      "name": "Cone of Decay",
+      "source": "jbassin",
+      "level": 7,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a carrion beetle"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a 60-foot-long cone originating from your hand. All unattended, nonliving, organic matter within the cone crumbles to dust. Each creature in the cone must make a Constitution saving throw. If the saving throw fails, all the creature's nonmagical, organic gear (food, drink, cloth, leather, etc.) is destroyed and all nonmagical, metal gear takes a permanent -1 penalty to its stats (AC for armor and attack/damage for weaponry).",
+        "Undead creatures additionally lose 4 points of Constitution, or 2 points if they made a successful Constitution saving throw."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Deja Vu",
+      "level": 2,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "taken after a creature is the target of an attack"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small mirror and a small mirror"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist the strands of time to force a creature to relive a past trauma. As a reaction to a creature being the target of an attack, you can force the creature to make a Wisdom saving throw against your spell DC or suffer the same amount and type of damage it had just taken, up to a cap of 24. Additionally, if the creature made a saving throw as part of the previous attack and succeeded, it must remake the saving throw with disadvantage or suffer the original effects."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Ebb and Flow",
+      "level": 3,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "an ant encased in amber"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You detach a 20-foot-radius sphere centered on a point of your choosing from the natural flow of time.",
+        "Allies gain an additional 10 feet of movement and can take a second reaction on turns they begin within the sphere.",
+        "Enemies must succeed on a Wisdom saving throw against your spellcasting DC or their movement is reduced by 10 feet and they can only take either an action or bonus action on turns they begin within the sphere. Additionally, those who fail their saving throw cannot make multiattacks inside the sphere."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Fast-Forward",
+      "source": "jbassin",
+      "level": 6,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "750gp worth of Nothing, which is consumed in the casting",
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You attempt to force a creature far into its own future. One creature you touch must succeed on a Constitution saving throw or else become cursed with age. The creature becomes wizened and enfeebled and has disadvantage on Strength, Dexterity, and Constitution-based ability checks, attack rolls, and saving throws. It does half damage with weapon attacks.",
+        "This effect can be ended by magic that removes curses."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Jolt",
+      "source": "jbassin",
+      "level": 5,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You donate some of your time for others to spend. Select up to four willing creatures you can see within range. Each of those creatures can immediately make one weapon attack with a ready weapon; each can also move up to 10 feet before or after the attack."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Laixa's Historical Tracker",
+      "level": 2,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true,
+        "m": "a hound's hair and some sand"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "jbassin",
+      "entries": [
+        "You imbue a looking glass with chronomantic energy. You can look briefly into the past of the path you're on, and can see the footprints of the last creature who traveled along this same path, diplayed as ghostly footsteps."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When cast at level 4, you can identify the race of the creature, and when cast at level 6 you can identify its name (if it has one and the individual is known to you)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legend Killer",
+      "level": 7,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You slow down the flow of time around a legendary creature, robbing it of the speed necessary to perform legendary actions. When you cast the spell, the target creature must make a successful Constitution saving throw or lose the ability to take legendary actions for the spell's duration. A creature can't use legendary resistance to automatically succeed on the saving throw against this spell. An affected creature repeats the saving throw at the end of its turn, regaining 1 legendary action on a success. It continues repeating the saving throw until the spell ends or it regains all its legendary actions."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Lend Time",
+      "level": 3,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "taken immediately before your turn"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a clock with two hour hands"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "turn",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "As a reaction taken immediately before your turn, you can lend time to a creature of your choosing within range. You lose the use of your movement, action, and bonus action; and, in return your ally may take a turn in your place. This does not change the initiative order and they will still go as normal when it is their regular turn."
+      ]
+    },
+    {
+      "name": "Magic Re-Missiles",
+      "source": "jbassin",
+      "level": 4,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a handful of glass marbles"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You trap your magic missiles in a time loop. You create three missiles that unerringly strike creatures you can see, dealing {@damage 1d6 + 1} force damage each. You can choose to have the missiles strike the same creature or split them between different creatures. After the missiles strike their targets, they rubberband back to your side and hover. As a bonus action on each of your subsequent turns, you can launch the missiles again. The missiles disappear when the spell ends.",
+        "A missile that strikes a shield spell is dispelled and doesn't return."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 4th level, you gain one additional missile."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Nightfall",
+      "source": "jbassin",
+      "meta": {
+        "ritual": true
+      },
+      "level": 3,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 100
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You call upon night to arrive ahead of schedule. With a sharp word, you create a 60-foot-diameter cylinder centered on a point within range. Creatures and objects inside the cylinder are unaffected, but the sky above the area darkens as the sun quickly sets and the moon rises. While inside the area, all creatures percieve their surroundings as if it were night, but those outside the area cannot see that anything changed. The affect lasts until the rest of the world catches up to the time shift at midnight, at which point the spell fades."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the area the cylinder covers increases. At 4th level, it covers 600ft. At 5th level, 1 mile. At 6th level and up, it covers 10 miles."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Outside of Time",
+      "source": "jbassin",
+      "level": 8,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You remove one willing creature or object from the flow of time entirely, causing it to disappear. Any concentration spells the creature was maintaining end immediately. You decide how long the spell lasts, up to 24 hours.",
+        "While it is outside of time, the target creature can't be located with divination magic. Not even a wish or miracle can bring the target back earlier; it's as if it doesn't exist at all.",
+        "When the spell ends, the target returns to the same location it disappeared from. If some other object occupies that space, the target is harmlessly displaced into the nearest open space. For the target, no time has elapsed; it's not even aware it was gone. Any timed or ongoing effects that were active on the target creature (with the exception of spells that were being maintained with concentration) continue from where they left off, since those effects skipped through time with the creature."
+      ]
+    },
+    {
+      "name": "Preserve Foodstuffs",
+      "level": 1,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": true
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You freeze an object in time, completely preserving its insides. When you cast this spell on a container with a volume equal to or less than 10 cubic feet, you may stop the progression of time inside the container. Any item with a limited shelf-life will last indefinitely when preserved in this manner. The spell fails if a living creature is inside the container when the spell is cast. The spell ends when the container is opened."
+      ]
+    },
+    {
+      "name": "Repetitious Trauma",
+      "source": "jbassin",
+      "level": 5,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "amount": 60,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 1,
+            "type": "minute"
+          }
+        }
+      ],
+      "savingThrow": [
+        "charisma"
+      ],
+      "entries": [
+        "You twist the strands of time to force a creature to relive a past trauma, over and over on loop. The creature takes {@damage 6d6} damage of the type most recently inflicted upon it if it fails a Charisma saving throw. While you maintain concentration on this spell, you can use a bonus action to force the target make a Charisma saving throw, taking {@damage 4d6} damage of that type if they fail. "
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reset",
+      "level": 4,
+      "source": "jbassin",
+      "school": "chronomancy",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "Temporal energy bursts from you to bathe the battlefield. Choose up to four creatures within range. If the creature is your ally, it can reroll its initiative check twice, keeping whichever of the two results it prefers. If the target is your enemy, it must make a successful Wisdom saving throw or reroll its initiative check twice, keeping whichever of the two results you prefer. New initiative results go into effect at the start of the next round."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, you can affect one additional creature for each slot level above 4th."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Revisit",
+      "source": "jbassin",
+      "level": 5,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You return to a point in your recent past. You may select a location you've visited within the last hour and teleport back to it, regaining any momentum and inertia you may have had at that moment."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot higher than 5th level, you may bring an additional person along with you. They are brought to a location within five feet of you, and also gain your same speed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rewind and Playback",
+      "source": "jbassin",
+      "level": 3,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You lay your hands on one willing creature and rewind past wounds, playing them back onto yourself instead. Choose a number of hit points to heal on the target. For every 6 points of damage you heal on the affected creature (rounded up to the nearest multiple of 6), you take {@damage 1d6} necrotic damage. This damage can't be reduced by resistance, immunity, or any other means as you're absorbing it, but once you've taken the damage, it can be healed normally. A target creature can't heal more than 60 hit points from one casting of this spell."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "miscTags": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Temporal Discharge",
+      "source": "jbassin",
+      "level": 4,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": true
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "discharge"
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You funnel magical energy into an object, to be discharged at a later date. When casting the spell, you may select a damage type and a command word. The damage type may not be force damage. When a creature touches the object without speaking the command word, magical energy springs forth, dealing {@damage 10d6} damage in the type you chose, or half damage with a successful Dexterity saving throw.",
+        "The presence of a charge on an object can be detected with a successful Intelligence (Investigation) check against your spell save DC."
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Temporal Threshold",
+      "source": "jbassin",
+      "level": 4,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small broken key"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 24,
+            "type": "hour"
+          }
+        }
+      ],
+      "savingThrow": [
+        "charisma"
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "entries": [
+        "You change the flow of time ever-so-slightly at the threshold of a location. When you cast this spell, you touch a doorway, gate, window, or other construction that serves as an opening between two locations. You must select a word, phrase, or action that must be performed to secure safe passage through the door. The first creature that does not perform this safeguard while passing through the doorway finds their body being ripped apart as they're subjected to different speeds of time simultaneously. They must succeed a Charisma saving throw or take {@damage 8d10} force damage and be {@condition paralyzed} until the start of their next turn. The creature recieves half damage and is not paralyzed if they succeed."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the force damage increases by {@scaledice 5d10|4-9|2d10} per spell slot level above 4th."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Time Jump",
+      "level": 8,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You throw a creature forward in time, if it fails a Constitution saving throw. The creature disappears for {@dice 1d4 + 2} rounds, during which time it cannot act or be acted upon in any way. When the creature returns, it is unaware that any time has passed."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Time Loop",
+      "level": 6,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a metal loop"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You capture a target in a loop of time. The creature is teleported to the space where it began its previous turn. The target then makes a Wisdom saving throw. If it succeeds the spell's effect ends; but, if it fails the creature must repeat the actions it took on its previous turn, following the same sequence of moves and actions to the best of its ability. It doesn't need to move along the same path or attack the same target but if it moved then attacked on its previous turn, its only option is to move then attack this turn. If the space where the target began its previous turn is occupied or it's impossible for the target to take the same action (if it cast a spell but it's now unable to do so, for example), the target is incapacitated.",
+        "An affected target repeats the saving throw at the end of its turn, ending the effect on itself on a success. For as long as the duration lasts, the target teleports back to its starting point at the start of each of its turns and it must repeat the same sequence of moves and actions."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ]
+    },
+    {
+      "name": "Time Step",
+      "level": 2,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "page": 9,
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You briefly step forward in time. You disappear from your location and reappear at the beginning of your next turn in a location within 30 feet of the space you disappeared from. You can't be affected by anything that happens during the interval you're missing, and you aren't aware of anything that happens during that time. You cannot cast this twice in a row."
+      ]
+    },
+    {
+      "name": "Tunnel Vision",
+      "level": 1,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a handful of caltrops"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "A willing creature you touch is imbued with foresight. For the duration of the spell the creature may use an additional {@damage 1d8} when rolling for initiative.",
+        "If this spell is cast while its effect is already active on another creature, the original spell's effect fades."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a 2nd level spell slot or higher, the number of creatures you can target with this spell increases by one for each slot level above first."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wall of Time",
+      "level": 5,
+      "school": "chronomancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "an hourglass"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You form a rip in time into the shape of a wall within range. You can make a straight wall up to 60 feet long, 20 feet high, and 1 foot thick, or a circular wall up to 20 feet high, 1 foot thick, and forming a closed circle 20 feet in diameter.  Nonmagical ranged attacks that cross the wall vanish into time with no other effect. Ranged spell attacks and ranged weapon attacks made with magical weapons that pass through the wall are made with disadvantage. A creature that intentionally enters or passes through the wall is affected as if they had just failed their initial saving throw against the {@spell slow|phb} spell."
+      ]
+    }
+  ]
+}

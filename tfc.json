@@ -1,0 +1,243 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "dateAdded": 1598811816
+  },
+  "item": [
+    {
+      "name": "Staff of Minor Striking",
+      "weight": 4,
+      "tier": "Minor",
+      "rarity": "Rare",
+      "source": "jbassin",
+      "reqAttune": true,
+      "entries": [
+        "This staff can be wielded as a magic quarterstaff that grants a +1 bonus to attack and damage rolls made with it.",
+        "The staff has 3 charges. When you hit with a melee attack using it, you can expend any number of charges. For each charge you expend, the target takes an extra {@damage 1d6} radiant damage. The staff regains all expended charges daily at dawn."
+      ],
+      "charges": 3,
+      "staff": true
+    },
+    {
+      "name": "Inverse Driftglobe",
+      "wondrous": true,
+      "weight": 1,
+      "tier": "Minor",
+      "rarity": "Uncommon",
+      "source": "jbassin",
+      "entries": [
+        "This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the {@spell darkness} spell. Once used, the {@spell darkness} effect can't be used again until the next dawn.",
+        "You can speak another command word as an action to make the shadowed globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out."
+      ],
+      "attachedSpells": [
+        "darkness"
+      ]
+    },
+    {
+      "name": "Pyroconverger",
+      "wondrous": true,
+      "rarity": "Uncommon",
+      "source": "jbassin",
+      "entries": [
+        "A Pyroconverger is a foot long black wrought iron sculpture of a scorpion with a metallic tube driven into the mouth and a trigger on the tail.",
+        "The scorpion carries 5 charges, which recharge on a long rest of the most recent person to use the device. When the trigger is pulled, a charge is expended and a burst of green flame fills the area of a ten foot cone in front of the device. All creatures caught in the cone must attempt a DC 13 Dexterity saving throw or take {@damage 6d6} fire damage and have their movement be reduced by half. On a successful save, the creature takes {@damage 4d6} fire damage and its movement is unaffected. If all creatures succeed on their saving throw, an additional charge is lost.",
+        "Should the device lose all of its charges, it will explode on initiative count 20, causing those in a 20 foot radius around it to take {@damage 12d6} fire damage and make a DC 13 Dexterity saving throw against being knocked prone."
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Patishvat's Corrupting Pamphlet",
+      "wondrous": true,
+      "weight": 5,
+      "rarity": "Artifact",
+      "source": "jbassin",
+      "reqAttune": true,
+      "entries": [
+        "An artifact from before the Sundering, back when the Order was active. Patishvat's Corrupting Pamphlet is a masterwork of hundreds of layers of different kinds of magic, most of which made by techniques no longer known to mortals.",
+        "The Pamphlet was said to have contained information on how to locate Patishvat's mobile wizard tower, likely for recruiting the strong mages that could pass the trials administered by the Pamphlet. However, over the years the magic inside the artifact has run rampant, changing the words inside to gibberish and corrupting the trials into their most simple functions. A skilled wizard, artificer, or enchanter might be able to restore the original functionality given enough time, however.",
+        "Now all that remains of the pamphlet are its storage and duplication abilities, which can still provide immense functionality in the right hands.",
+        {
+          "name": "Duplication",
+          "type": "entries",
+          "entries": [
+            "Likely a remainder of the Pamphlet's ability to generate foes for its trials, the artifact can create perfect duplications of any creature that touches it. A non-attuned creature that touches the Pamphlet must succeed on a Wisdom saving throw against a 13 DC or the artifact will materialize a clone, expending one of its three charges to do so. The clone is identical in every way to the original except that it is vulnerable to force damage, hostile to everyone but prioritizes targeting its original, and will dissipate exactly one hour after its creation. The same creature cannot be cloned more than once in a 24 hour span. The Pamphlet's charges are restored at dawn."
+          ]
+        },
+        {
+          "name": "Capture",
+          "type": "entries",
+          "entries": [
+            "A fragment of the Pamphlet's trial generation functionality, the artifact can store and release creatures within its pages. The wielder of the pamphlet may hold it against a creature of Huge or smaller size for one minute, at the end of which the creature makes a Wisdom saving throw against 15 DC. On a failure, the creature is drawn into the Pamphlet. The Pamphlet has ten units of storage, where the size of a creature is represented by an amount shown in the table below.",
+            {
+              "type": "table",
+              "caption": "Stored Creature Sizes",
+              "colLabels": [
+                "Units",
+                "Size"
+              ],
+              "colStyles": [
+                "col-2 text-center",
+                "col-10 text-center"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "Tiny"
+                ],
+                [
+                  "2",
+                  "Small"
+                ],
+                [
+                  "4",
+                  "Medium"
+                ],
+                [
+                  "8",
+                  "Large"
+                ],
+                [
+                  "10",
+                  "Huge"
+                ]
+              ]
+            },
+            "While stored inside the Pamphlet, the creature has no need for food, water, or sleep, but does still age. As an action you may release one creature from the pamphlet into an open space within five feet. When the Pamphlet is used in this way, the Duplication effect does not occur."
+          ]
+        },
+        "When the Pamphlet is the target of a {@spell Dispel Magic} spell, all of its charges are expended harmlessly, and any creatures stored within are immediately released."
+      ]
+    }
+  ],
+  "monster": [
+    {
+      "name": "Hellforged Titan",
+      "source": "jbassin",
+      "size": "H",
+      "type": "construct",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 125,
+        "formula": "10d12 + 60"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 23,
+      "dex": 8,
+      "con": 22,
+      "int": 3,
+      "wis": 11,
+      "cha": 1,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "poison",
+        "psychic"
+      ],
+      "vulnerable": [
+        "radiant"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "poisoned"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "cr": "8",
+      "trait": [
+        {
+          "name": "Platforms",
+          "entries": [
+            "The Hellforged Titan has two platforms built into its chassis. One Medium or smaller creature can ride on each platform without squeezing. To make a melee attack against a target within 5 feet of the warforged, they must use spears or weapons with reach and the target must be Large or larger."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The Hellforged Titan deals double damage to objects and structures."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Hellforged Titan makes one axehand attack and one hammerfist attack."
+          ]
+        },
+        {
+          "name": "Axehand",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 6}) slashing damage, plus 11 ({@damage 2d10}) slashing damage if the target is {@condition prone}."
+          ]
+        },
+        {
+          "name": "Hammerfist",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Sweeping Axe {@recharge}",
+          "entries": [
+            "The Hellforged Titan makes a sweep with its axehand, and each creature within 10 feet of it must make a {@dc 17} Dexterity saving throw. A creature takes 19 ({@damage 3d8 + 6}) slashing damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Siege Monster"
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1241 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "gestalt": {
+        "full": "Gestalt",
+        "short": "Gest.",
+        "color": "16a085"
+      }
+    },
+    "dateAdded": 1598811427
+  },
+  "spell": [
+    {
+      "name": "Bestial Rage",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sharp tooth"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability (expending an action to do so). Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You increase the speed and power of your wildshape but also increase its bulk. For the duration of this wildshape you have advantage on all melee attacks, but all melee attacks on you have advantage as well. The effect ends when you lose your form."
+      ]
+    },
+    {
+      "name": "Blades of Bone",
+      "source": "jbassin",
+      "level": 5,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a needle made from bone"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You turn your wildshaping energy inward, growing long, sharp spurs of bone all over your body. You deal {@damage 3d6} piercing damage to your target when you successfully initiate a grapple. You deal another {@damage 2d6} damage at the start of your turn to any creature you have {@condition grappled}."
+      ],
+      "damageInflict": [
+        "piercing"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ]
+    },
+    {
+      "name": "Body Enhancement: Claws",
+      "source": "jbassin",
+      "level": 1,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a claw"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to partially modify your body. You replace your fingers with magically sharp claws, so that your unarmed strikes do {@damage 2d6} slashing damage. You are proficient with your unarmed strikes."
+      ],
+      "damageInflict": [
+        "slashing"
+      ]
+    },
+    {
+      "name": "Body Enhancement: Fangs",
+      "source": "jbassin",
+      "level": 1,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 10
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to partially modify your body. You transform your mouth into the jaws of a beast. Make a melee spell attack against a creature within range. On a hit, the target takes {@damage 3d6} piercing damage, and must succeed on a Strength saving throw or be knocked {@condition prone}."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d6} for each slot level above 1st."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "piercing"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Body Enhancement: Hide",
+      "level": 1,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "jbassin",
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to partially modify your body. You thicken your skin into the coarse, strong texture of a beast's. Until the spell ends your base AC becomes 13 + your Constitution modifier. The spell ends if you don armor or if you dismiss the spell as an action."
+      ]
+    },
+    {
+      "name": "Body Enhancement: Horns",
+      "source": "jbassin",
+      "level": 2,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 5
+        }
+      },
+      "components": {
+        "s": true,
+        "m": {
+          "text": "a horn or antler"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to partially modify your body. You grow pointed horns on your forehead and rush at a target within range. Make a melee spell attack against the target. On a hit, the target takes {@damage 3d12} bludgeoning damage. If you move at least 20 feet straight at the target before casting this spell, you can choose one of the following effects to inflict upon it on a hit:",
+        {
+          "type": "list",
+          "items": [
+            "The target must succeed on a Strength saving throw or be pushed 10 feet away from you.",
+            "The target must succeed on a Strength saving throw or be knocked {@condition prone}.",
+            "The target takes an additional {@damage 1d12} bludgeoning damage."
+          ]
+        }
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@damage 1d12} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Body Enhancement: Mind",
+      "source": "jbassin",
+      "level": 2,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's knowledge to deepen your understanding. For the duration of the spell, you can use your Wisdom score and modifier in place of your Strength, Dexterity, or Constitution score and modifier. Choose which ability score will be replaced when you cast the spell."
+      ]
+    },
+    {
+      "name": "Body Enhancement: Sense",
+      "source": "jbassin",
+      "level": 1,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to partially modify your body. You modify either your eyes, ears, or nose to become more beastlike. Choose one of the following senses: hearing, smell, or sight. Until the spell ends, you have advantage on Wisdom (Perception) checks that rely on that sense."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a 2nd-level spell slot, your can choose two senses instead of just one. When you cast this spell using a slot of 3rd level or higher, you can choose all three senses."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fluid Form",
+      "source": "jbassin",
+      "level": 4,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You turn your wildshape abilities inward, to reconstruct your form. You transform yourself and all items you are carrying into thick liquid. The amount of liquid has the same mass and volume as your normal body, but it is amorphous, allowing you to squeeze through gaps that are at least an inch wide. In this form, you are immune to poison, paralysis, and stun. Your speed becomes 20 feet.",
+        "You can't speak, attack, or cast spells in fluid form. You gain resistance to bludgeoning, slashing, and piercing damage done by nonmagical weapons.",
+        "You can end this spell as an action. If the spell ends when you are in a container that's too tight for your full form, the container shatters if it can; if it can't, then you remain in fluid form until you are released from the container."
+      ],
+      "damageImmune": [
+        "poison"
+      ],
+      "damageResist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Grosteque Selfshape",
+      "source": "jbassin",
+      "level": 4,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 1,
+            "type": "minute",
+            "upTo": true
+          }
+        }
+      ],
+      "entries": [
+        "You channel your wildshaping energy into your body, distorting and enlarging your normal form past its natural limits. Your size increases to Large and your equipment grows to suit your expanded form. If there is insufficient space, you grow as large as you safely can. While in this form, your weapon attacks inflict an additional {@damage 2d8} damage of their normal type and you gain temporary hit points equal to twice your spellcasting modifier at the start of each of your turns. You cannot wildshape while this spell is active."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Incensed Bestial Rage",
+      "source": "jbassin",
+      "level": 5,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sharper tooth"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability (expending an action to do so). Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You greatly increase the speed and power of your wildshape but also increase its bulk. For the duration of this wildshape you have advantage on all melee attacks and deal an additional {@damage 2d6} damage, but all melee attacks on you have advantage as well. The effect ends when you lose your form. When the spell ends you gain a level of exhaustion."
+      ]
+    },
+    {
+      "name": "Monstrous Copy: Claws",
+      "source": "jbassin",
+      "level": 6,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a claw"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You transform your hands into the thick, wide claws of a Bulette, enabling you to burrow through earth and stone. You can burrow through earth at a rate equal to your walking speed, and through rock or stone at one-quarter of that rate.",
+        "In addition, your unarmed attacks do {@dice 2d6} slashing damage. When you successfully attack an object or building you may treat the damage as if it were a critical hit."
+      ],
+      "damageInflict": [
+        "slashing"
+      ]
+    },
+    {
+      "name": "Monstrous Copy: Eye Stalks",
+      "source": "jbassin",
+      "level": 7,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a pair of eyeballs"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You sprout three Beholder eye stalks and shoot rays of light from them. You can direct the rays at the same target or at different ones. For each ray, roll {@dice 1d10} to determine its effect. If you roll the same result more than once, reroll until you have no duplicate results.",
+        {
+          "type": "table",
+          "caption": "Eye Ray Effects",
+          "colLabels": [
+            "d10",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1",
+            "col-8"
+          ],
+          "rows": [
+            [
+              "1",
+              "{@b Charm Ray.} The target must succeed on a Wisdom saving throw or be {@condition charmed} by you for 1 hour, or until you or your companions do anything harmful to it."
+            ],
+            [
+              "2",
+              "{@b Paralyzing Ray.} The target must succeed on a Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            ],
+            [
+              "3",
+              "{@b Fear Ray.} The target must succeed on a Wisdom saving throw or be {@condition frightened} of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the you are visible to the target, ending the effect on itself on a success."
+            ],
+            [
+              "4",
+              "{@b Slowing Ray.} The target must succeed a Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            ],
+            [
+              "5",
+              "{@b Enervation Ray.} The target must make a Constitution saving throw, taking {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one."
+            ],
+            [
+              "6",
+              "{@b Telekinetic Ray.} The target must succeed on a Strength saving throw. On a failed save, you can move it up to 30 feet in any direction (no action required) and it is {@condition restrained} by the ray's telekinetic grip until the start of your next turn or until you are {@condition incapacitated}."
+            ],
+            [
+              "7",
+              "{@b Sleep Ray.} The target must succeed on a Wisdom saving throw or fall asleep and remain {@condition unconscious} for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead."
+            ],
+            [
+              "8",
+              "{@b Petrification Ray.} The target must make a Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the {@spell greater restoration} spell or other magic."
+            ],
+            [
+              "9",
+              "{@b Disintegration Ray.} The target must make a Dexterity saving throw or take {@damage 10d8} force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust."
+            ],
+            [
+              "10",
+              "{@b Death Ray.} The target must succeed on a Dexterity saving throw or take {@damage 10d10} necrotic damage. The target dies if the ray reduces it to 0 hit points."
+            ]
+          ]
+        }
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 8th level or higher, you create one additional ray for each slot level above 7th."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "force",
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution",
+        "wisdom",
+        "dexterity"
+      ],
+      "conditionInflict": [
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "restrained",
+        "unconscious"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Copy: Shell",
+      "source": "jbassin",
+      "level": 9,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a powdered tarrasque tooth worth at least 500 gp, which the spell consumes",
+          "cost": "500gp"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You grow the protective carapace of a Tarrasque, which deflects most forms of magic. For the duration, any time you are targeted by a {@spell magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, you are unaffected. On a 6, you are unaffected, and the effect is reflected back at the caster as though it originated from you, turning the caster into the target."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Copy: Stinger",
+      "level": 8,
+      "school": "gestalt",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a thorn"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You grow the dangerous stinger of a Hutijin on the end of a 10-foot-long tail. During the spell's duration, you can use the stinger to make a melee spell attack with a reach of 10 feet. On a hit, the target takes {@dice 1d4} piercing damage plus {@dice 4d10} poison damage, and a creature must make a successful Constitution saving throw or become vulnerable to poison damage for the duration of the spell."
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "damageInflict": [
+        "piercing",
+        "poison"
+      ],
+      "damageVulnerable": [
+        "poison"
+      ]
+    },
+    {
+      "name": "Monstrous Copy: Tail",
+      "source": "jbassin",
+      "level": 7,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You grow the monstrous tail of a Bore Worm to bludgeon your foes. While the spell is active you may make a melee spell attack to hit with the tail. On a hit, you deal {@dice 6d6} bludgeoning damage. Once per turn when you hit a creature with your tail, you can force it to make a Constitution saving throw, becoming {@condition stunned} until the end of your next turn on a failed save."
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "conditionInflict": [
+        "stunned"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Copy: Tentacle",
+      "source": "jbassin",
+      "level": 5,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a preserved brain"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You transform one of your limbs into a tentacle, which you wield like a whip. This transformation lasts until the spell ends. It deals {@dice 1d8} piercing damage on a hit and has the finesse, light, and reach properties. In addition, when you hit a creature with this whip, it becomes {@condition grappled} (escape DC equal to your spell save DC). If the target is Medium or smaller, it is also {@condition restrained} until the grapple ends. While you are grappling a creature with this whip, you can't use it to make attacks at other creatures.",
+        "As an action, you can inject poison into a grappled creature. The target must succeed on a Constitution saving throw or be {@condition poisoned} for 1 minute. The target is {@condition paralyzed} while {@condition poisoned} in this way, and it can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a 6th- or 7th-level spell slot, the damage increases to {@damage 2d8}. When you cast it using a spell slot of 8th level or higher, the damage increases to {@damage 3d8}."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained",
+        "poisoned",
+        "paralyzed"
+      ],
+      "damageInflict": [
+        "piercing"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Copy: Wail",
+      "source": "jbassin",
+      "level": 6,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "feet",
+          "amount": 20
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a strand of banshee hair"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false,
+        "hemomancy": false
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon your knowledge of monsters to fight like them. You transform your vocal cords into that of a Banshee's, releasing a mournful wail that pierces into the mind of those that hear it. Each creature within 20 feet of you must make a Constitution saving throw. On a failed save, a creature takes 4d8 psychic damage, falls {@condition unconscious}, and is {@condition deafened} for 1 minute. On a success, it takes half as much damage and suffers no other effect. An unconscious creature wakes up after 1 hour, if it takes any damage, or if another creature uses its action to shake them awake. A deafened creature automatically succeeds on the save."
+      ],
+      "conditionInflict": [
+        "deafened",
+        "unconscious"
+      ],
+      "damageInflict": [
+        "psychic"
+      ],
+      "areaTags": [
+        "S"
+      ],
+      "entriesHigherLevel": []
+    },
+    {
+      "name": "Shape Modify: Accuracy",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a preserved eye"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability. Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You increase the sharpness of your senses but blunt your claws in the process. For the duration of this wildshape you have an additional +5 to hit, but your damage is reduced by 10. The effect ends when you lose your form."
+      ]
+    },
+    {
+      "name": "Shape Modify: Armor",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a smooth river stone"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability. Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You increase the protection your wildshape but also decrease its speed. For the duration of this wildshape you add 2 to your AC, but your movement speed of every type is reduced to 10ft and you lose the ability to dash. The effect ends when you lose your form."
+      ]
+    },
+    {
+      "name": "Shape Modify: Severity",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a whittled knife"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability. Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You increase the sharpness of your claws but blunt your senses in the process. For the duration of this wildshape you have an additional +10 to all damage, but your attack rolls are reduced by 5. The effect ends when you lose your form."
+      ]
+    },
+    {
+      "name": "Shape Modify: Speed",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a crushed ladybug shell"
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw upon the collective's memory of wildshaping to refine your wildshaping. As part of casting this spell, you also transform as through the Wild Shape ability. Doing so still expends a charge of wildshape, and you cannot cast this spell if you have no charges remaining.",
+        "You increase the speed your wildshape but also decrease its padding. For the duration of this wildshape you have an additional 30ft walking movement speed, but your AC is reduced by 3. The effect ends when you lose your form."
+      ]
+    },
+    {
+      "name": "Suspension",
+      "source": "jbassin",
+      "level": 3,
+      "school": "gestalt",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a cord of vine"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 1,
+            "type": "hour",
+            "upTo": true
+          }
+        }
+      ],
+      "entries": [
+        "Vines magically sprout from a solid surface within 30 feet of you and wrap themselves securely around their torso, leaving your arms and legs unhindered. The vines shift with you, growing and retracting as you move along the ground or other surface; and if any of the vines are destroyed they are immediately replaced with more vines. If you are falling when you cast this spell the vines catch you, stopping your fall and negating any fall damage.",
+        "For the duration, as long as you are within 30 feet of any solid surface, you have a flying speed of 40 feet. Additionally, you cannot be knocked prone and you have advantage on saving throws made against effects that would move you. When the spell ends the vines will harmlessly lower you to the ground (or the nearest wall, if no ground is within 30 feet)."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      }
+    }
+  ]
+}

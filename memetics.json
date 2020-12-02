@@ -1,0 +1,1954 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "memetics": {
+        "full": "Memetics",
+        "short": "Meme.",
+        "color": "f4d03f"
+      }
+    },
+    "dateAdded": 1598811550
+  },
+  "spell": [
+    {
+      "name": "Acupuncture",
+      "source": "jbassin",
+      "level": 2,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "a thin, sharp needle"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon small arcane needles around a foe, and attempt to drive them into pressure points around their body. Make a ranged spell attack against a creature within range, on a hit the creature takes {@dice 4d6} piercing damage, and cannot heal until the end of your next turn. Also on a hit you learn one of the following about the target: a damage vulnerability, damage resistance, or damage immunity."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Arcane Tattoo",
+      "source": "jbassin",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "special ink worth 200 gp",
+          "cost": 200
+        }
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "discharge"
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "You scribe a tattoo on a willing creature's skin that holds a portion of magical essence. A creature can only hold one arcane tattoo at a time; scribing another eliminates the previous one.",
+        "The recipient of the tattoo can activate the tattoo's effect as a bonus action. Once the tattoo is scribed, it remains until the effect is activated.",
+        "The tattoo types are as follows:",
+        {
+          "type": "entries",
+          "name": "",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Red",
+              "entries": [
+                "The recipient goes into a battle frenzy, gaining advantage on melee attacks for 1 minute."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Yellow",
+              "entries": [
+                "The recipient's Strength score increases to 19 for 10 minutes."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Green",
+              "entries": [
+                "The recipient's speed increases to 60 feet for 1 minute, and opportunity attacks against the recipient have disadvantage."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Purple",
+              "entries": [
+                "The recipient gains advantage on Stealth checks for 10 minutes."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mental Balance",
+      "source": "jbassin",
+      "level": 4,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a blindfold and a set of scales"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You temporarily remove all of a creature's emotional attachments or biases. While under the effect of this spell, the creature gains advantage on saving throws against illusion and memetic spells. All decisions the creature makes while under the spell's influence must follow the spirit and letter of the law, and the subject is incapable of showing favoritism."
+      ]
+    },
+    {
+      "name": "Blithering Gibberish",
+      "source": "jbassin",
+      "level": 2,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 100
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You partially obscure the mental faculties of a target. One creature you can see must make a Wisdom saving throw. If the saving throw fails, the creature is cursed and becomes incapable of producing intelligible speech for the duration of the spell. The creature is also unable to cast spells with a verbal component. At the end of each of the creature's turns, it can repeat the saving throw. A successful save ends the spell. A spell that removes a curse can also end the spell."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "If you cast Blithering Gibberish with a 4th-level or higher spell slot, the creature is also unable to understand spoken language for the duration of the spell. If you use an 8th-level or higher spell slot, the duration becomes permanent and the creature can't make saving throws to end the effect."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Bound Minds",
+      "source": "jbassin",
+      "level": 7,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "two halves of a locket or necklace"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "year",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a direct mental link between two willing creatures. Each becomes perpetually aware of the other's location accurately enough to find the other even when blindfolded. They are aware of each other's physical and emotional condition at all times. This knowledge doesn't give any information about the subject's surroundingsâ€”one of the spell's recipients could know that the other is 10 miles away in a castle and distraught, for example, but wouldn't know that the other person is chained to a wall and awaiting trial for witchcraft.",
+        "A person can be under the effect of only one bound hearts spell at a time, and it's not possible for more than two people to be simultaneously linked by this spell."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "If Bound Minds is cast using a 9th-level slot, the duration becomes permanent."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cerebral Disruption",
+      "source": "jbassin",
+      "level": 9,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You completely rewire the memory-forming part of a target creature's brain. The creature must make an Intelligence saving throw. If the saving throw fails, the creature loses {@dice 2d6} points of Intelligence (to a minimum of 3) and must roll on the following table to see how it is cursed. On a successful save, the creature loses half that amount of Intelligence and suffers no additional effect.",
+        {
+          "type": "table",
+          "colLabels": [
+            "{@dice d6}",
+            "Curse Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 1
+                }
+              },
+              "The target is {@condition frightened} of you."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 2
+                }
+              },
+              "The target develops a severe phobia to a common object. Anytime the target is within 15 feet of the object and is able to perceive it, he or she becomes {@condition frightened} until the object is again more than 15 feet away. You choose the subject of the phobia. The object should be common, but not ubiquitous. For example, \"wooden spoons\" would be an appropriate subject, but \"shoes\" would not."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 3
+                }
+              },
+              "The target automatically fails Intelligence checks."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 4
+                }
+              },
+              "The target is confused (per the {@spell confusion} spell)."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 5
+                }
+              },
+              "The target suffers amnesia and is unable to recall details of its past or cast spells."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 6
+                }
+              },
+              "The target's mind regresses to a childlike state."
+            ]
+          ]
+        },
+        "The curse effect can be ended by remove curse or comparable magic, and greater restoration or comparable magic can repair the ability loss. Otherwise, the effects of this spell are permanent."
+      ],
+      "savingThrow": [
+        "intelligence"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ],
+      "miscTags": [
+        "PRM"
+      ]
+    },
+    {
+      "name": "Charming Memory",
+      "level": 1,
+      "school": "memetics",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You plant temporary, false, pleasant memories of yourself in another's mind. While the spell is active you may endear yourself to those around you and add {@damage 1d4} to any Charisma check or saving throw."
+      ]
+    },
+    {
+      "name": "Cone of Silence",
+      "source": "jbassin",
+      "level": 5,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "amount": 90,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a tuning fork"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You stop the flow of information in an area you can see. You create a 90-foot-cone eminating from your eyes in which all noise is silenced. Any creature or object within the cone is immune to thunder damage and is {@condition deafened}. The cone follows your line of sight as you move."
+      ],
+      "damageInflict": [
+        "thunder"
+      ],
+      "damageImmune": [
+        "thunder"
+      ]
+    },
+    {
+      "name": "Copy",
+      "source": "jbassin",
+      "level": 1,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a drop of black ink"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "This spell creates a perfect duplicate of any written or drawn document that you touch onto blank pages you supply. You can copy up to 50 pages of text with one casting of this spell. Magical writing, including spellbook pages, can be copied with this spell, but do not retain any magical properties."
+      ]
+    },
+    {
+      "name": "Dead Ringer",
+      "level": 4,
+      "school": "memetics",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "which you make after succeeding on a saving throw or missed by a ranged attack"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You make your foes see what they want to see. You turn invisible and an illusory duplicate appears in your place, seemingly undergoing the effects of whatever ailment you avoided. This double suffers a horrific fate from the affect, resulting in your apparent death. The illusion lasts for the duration of the spell. You remain invisible for the duration, or until you attack or cast a spell.",
+        "Physical interaction with the double reveals it to be an illusion, as things can pass through it. A creature that uses its action to examine the double can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature."
+      ]
+    },
+    {
+      "name": "Earworm",
+      "source": "jbassin",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You implant a small worm made of arcane thread into the skin of another creature. The creature must make a Constitution saving throw. On a failure, the worm seats itself in a vantage point close to the creature's ears. You can hear any sounds the target hears as long as you and the target are on the same plane of existence. The worm safely dissolves once the spell ends."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Erase",
+      "source": "jbassin",
+      "level": 1,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "This spell destroys any writing or drawing on an object you touch, so long as the object has less than 100 pages or the surface area of the object is less than 50 square feet. The object itself is unharmed, and appears to have never been written on in the first place. This can effect magical writing, including spellbooks and glyphs."
+      ]
+    },
+    {
+      "name": "Farsight",
+      "source": "jbassin",
+      "level": 4,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You empower a magic circle that links to sigils of seeing you previously created. You can select a number of sigils up to your Intelligence modifier (minimum of 1). The distance between the circle of scrying and the sigils of seeing is not a factor, and the sigils can even be on other planes of existence.",
+        "When you stand inside your circle of scrying, you can view the area around any of the linked sigils as if you were actually standing at the location of the sigil. You can switch between different sigils as an action.",
+        "The casting time for the spell depends on whether the circle is being drawn anew or a previously placed, permanent circle is being empowered. Drawing a new circle takes one day. Empowering a previously placed, permanent circle takes 1 minute.",
+        "Drawing a new circle requires material components costing 250 gold pieces. The circle is typically a flat design of a geometric shape with a 5-foot radius.",
+        "A sigil of seeing is created spending one minute drawing the sigil on a flat surface. Each sigil requires special ink that costs 100 gold pieces per sigil. The sigil disappears within moments of being drawn, but it reappears when you are scrying through it. A sigil is typically no more an inch in diameter. While a sigil is in use, it can be noticed by anyone who examines the spot where it's drawn and makes a successful DC 10 Wisdom (Perception) or Intelligence (Investigation) check. While the sigil isn't in use, finding it requires a deliberate search of the correct area and a successful Intelligence (Investigation) check against your spell saving throw DC."
+      ],
+      "opposedCheck": [
+        "wisdom",
+        "intelligence"
+      ],
+      "miscTags": [
+        "PRM"
+      ]
+    },
+    {
+      "name": "Flashback",
+      "source": "jbassin",
+      "meta": {
+        "ritual": true
+      },
+      "level": 1,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You touch a willing creature. Until the spell ends, the target can revisit its memory of an event that it experienced within the last 24 hours. While a creature is revisiting a memory through this spell, it is {@condition paralyzed} and hears sounds as if they came from far away. Additionally, you and up to 5 allies of your choice can share in visiting the memory, seeing through the target's eyes and hearing what it heard, gaining the benefits of any special senses that the target had. During this time, you are deaf and blind. If this spell ends due to failure to maintain concentration, both you and the affected creature take {@damage 1d6} psychic damage."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the target can choose an event that took place up to 7 days ago (2nd level), 30 days ago (3rd level), 1 year ago (4th level), or any time in the target's past (5th level)."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "psychic"
+      ]
+    },
+    {
+      "name": "Fugue",
+      "source": "jbassin",
+      "level": 5,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a vial of wine"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "Your touch causes a creature to forget its identity and history. The creature can make a Wisdom saving throw; a successful save negates the spell.",
+        "An affected creature retains all of abilities and spells, but it can't remember any details about its life, its mission, or its companions. If used against a hostile creature, the target can't remember why it is fighting and has disadvantage on attack rolls until the combat ends."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Haunt",
+      "source": "jbassin",
+      "level": 4,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 24,
+            "type": "hour",
+            "upTo": true
+          }
+        }
+      ],
+      "entries": [
+        "You bind yourself to a creature, gaining supernatural awareness of their location. You always know where the creature is, and it can never be hidden from you. In addition, you can sense what areas are in the target's line of sight. While the spell is active, you can use your bonus action to teleport to location within 30 feet of the target as long as the location isn't in the target's line of sight. If the location is occupied or is in a solid material, such as a wall, the teleportation fails. It also fails if you and the creature aren't on the same plane."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hellforging",
+      "level": 7,
+      "school": "memetics",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 24,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a complete mechanical body worth 100,000gp containing a core of refined Phlogiston",
+          "cost": 100000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You spend a day inscribing an arcane contract into the core of an inert {@creature Hellforged Titan|jbassin}. At the end of that time, you must make a DC 20 Charisma saving throw to complete the process. If the saving throw fails, you take {@damage 3d10} psychic damage plus {@damage 2d10} necrotic damage from waves of uncontrolled energy rippling out from the core. You can maintain the spell, repeating the saving throw at the end of each of your turns, with the same consequence to you for each failure. If you choose not to maintain the spell or are unable to do so, the core shatters and renders the entire construct unusable.",
+        "If the saving throw succeeds, you complete the construction process and animate the Titan. The Titan is friendly to you, but not under your control."
+      ],
+      "savingThrow": [
+        "charisma"
+      ]
+    },
+    {
+      "name": "Illusory Illusion",
+      "source": "jbassin",
+      "level": 6,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 400
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You subtly tweak the sensory input of those around you, tricking it into thinking a real object, creature, or phenomenon is just an illusion. You select one such item in range. Creatures interacting with the item you selected will assume it is an illusion and that any effects it causes, such as heat or damage, are likewise not real. Creatures that carefully examine the target or that are damaged by it can make an Intelligence saving throw. On a successful save, they realize the object's real nature."
+      ],
+      "savingThrow": [
+        "intelligence"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Inquisition",
+      "source": "jbassin",
+      "level": 2,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a temporary copy of the mind of a sleeping or unconcious creature you touch. If the creature is sleeping they must make a Charisma saving throw. If the saving throw fails, you are able to ask the copy questions and have it answer in its native tongue. If an answer would divulge information the creature wants especially to keep secret, it can make another Charisma saving throw with disadvantage to avoid answering."
+      ],
+      "savingThrow": [
+        "charisma"
+      ]
+    },
+    {
+      "name": "Laixa's Expert Intuition",
+      "source": "jbassin",
+      "level": 4,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": false
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "Until the spell ends, when you make a Wisdom (Insight) check to determine a deliberate lie, you can replace the number you roll with a 15."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mass Fluency",
+      "source": "jbassin",
+      "level": 6,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "week",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You grant up to four willing creatures the ability to understand any language they read or hear. In addition, they gain the ability to speak that language if they can speak normally."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 6th level, you can affect one additional creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oddly Satisfying",
+      "source": "jbassin",
+      "level": 5,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You flood a creature's mind with feelings of statisfaction and contentment. A creature that you touch must make a successful Wisdom saving throw or be overwhelmed by these feelings. The creature has disadvantage on attack rolls, ability checks, and skill checks, and it must make a Wisdom saving throw at the beginning of each of its turns. If the saving throw fails, the creature loses 1 point of Wisdom and is {@condition incapacitated} until the start of its next turn. The spell ends when the creature makes two successful saves, which don't need to be consecutive."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ]
+    },
+    {
+      "name": "Taboo",
+      "source": "jbassin",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "week",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You curse one creature you touch. The creature must make a Wisdom saving throw; if they fail, choose a taboo. The taboo can either be the act of lying, or a particular topic. The creature is cursed so that speaking about the taboo causes its tongue to swell grotesquely and protrude from its mouth, making it unable to speak. The tongue returns to normal size in {@damage 1d4} minutes.",
+        "If you choose a topic the DM gets final say on if it's too broad to apply the spell. For example, you may choose to target an event the target witnessed or a particular location, you cannot target something broad like \"People\". The effect can be ended by magic that removes a curse."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Talk the Talk",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "grease and a mockingbird's feather"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "jbassin",
+      "entries": [
+        "You are suddenly granted with the ability to say exactly the right thing in social situations. You know the most basic and pertinent information about people you've never met before, including their name, title, immediate relations, and publicly known interestsâ€”anything they would be happy to disclose in public. This allows you to blend in and appear as though you belong at any type of social gathering, whether it be a fancy ball at the palace surrounded by the social elite, or a clandestine meeting at a filthy tavern, surrounded by brigands and thieves. After an hour, you forget the information granted to you by the spell when it took effect, but retain any gleaned since the spell was cast. For example, the name of a nobleman you did not speak to would be forgotten, but the knowledge of the secret slaving ring run by Xanathar you ingratiated yourself with would still be known to you."
+      ]
+    },
+    {
+      "name": "Touch of Madness",
+      "source": "jbassin",
+      "level": 8,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 150
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a handful of coal dust"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "The judgment of a creature you can see is overwhelmed with contradictory images and impulses. The creature takes {@dice 4d6} psychic damage and must make a Wisdom saving throw. If the saving throw fails, the creature's Wisdom score becomes 1, it can't cast spells, and it becomes incredibly trusting, always following the last order given to it by anyone unless doing so would cause self-harm.",
+        "At the end of every 30 days, the creature can repeat the saving throw to end the effect. The spell can also be ended by a greater restoration, heal, or wish spell."
+      ],
+      "damageInflict": [
+        "psychic"
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Compression",
+      "source": "jbassin",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "an unfolded piece of origami"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You temporarily reduce the number of physical dimensions a creature occupies. You touch a willing creature and compress them into a 2D representation of themselves. While in this form, the creature has resistance to damage from non-magical weapons and can move in any direction along any flat, non-living surface. Additionally, the creature has advantage on Dexterity (Stealth) checks and can pass through openings that are at least as wide or as tall as the creature, but not necessarily both (e.g. the gap underneath a closed door). Finally, creatures compressed in this way do not require food or drink, but will continue to age.",
+        "The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is {@condition incapacitated} and can't move. Until the spell ends, a creature can revert to its 2D form, which also requires the 1-minute transformation."
+      ]
+    },
+    {
+      "name": "Artist's Rendition",
+      "source": "jbassin",
+      "level": 3,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a silvered paintbrush worth 250gp"
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "discharge"
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw a 2D object and magically reconstitute it into its real, 3D representation. The spell may convert a drawing covering no more than 25 sq feet into a real, mundane object or terrain featureâ€”such as a door, a pit, flowers, trees, cells, rooms, or weapons. When the spell is cast on a drawing it becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond and painting a pit on a floor creates a real pit. Doorways may extend through at most 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. Pits will always extend down 10 feet before stopping, regardless of the actual depth of the floor they're drawn on.",
+        "Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.",
+        "If you paint a form of energy such as fire or lightning, the energy deals {@damage 1d8} damage of the appropriate type to creatures within 5ft of the energy. The energy then dissipates."
+      ]
+    },
+    {
+      "name": "Forensic Analysis",
+      "source": "jbassin",
+      "level": 2,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": false,
+        "s": false,
+        "m": "a polished monocle"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You translate a sliver of a creature's soul into readable text, giving you insight into their inner workings. The first time you cast this spell, you materialize a \"Compendium of Statistics and Secrets.\" When it first materializes, the book has only one page, an empty table of contents. On subsequent castings of the spell, you may populate the book with both the statistics of a foe or the secrets of a creature.",
+        "When you cast the spell to learn statistics, you may select a creature in range. A page is added to the Compendium with the species of the creature, its type, a picture, and one additional stat of your choosing. You may choose to learn about a creature's vitality, resistances, vulnerabilities, skill aptitudes, greatest ability, or weakest ability. On subsequent castings of the spell, you may choose to learn another statistic, this will automatically be added to the creature's original entry.",
+        "When you cast the spell to learn secrets, you may select a creature in range. A page is added to the Compedium with their name, their race, a picture, and a one-word description of the their mood. While within range of the creature, the mood descriptor will update to match the their current status. Additionally, the creature must make a Wisdom saving throw. On a failure, you may ask their psyche one question and the answer (to the best of the creature's knowledge) will be recorded in the compendium. On a success, the creature knows you attempted to dig into its mind. Either way, you cannot cast the spell on the same creature in this fashion for another 24 hours."
+      ]
+    },
+    {
+      "name": "Overhaul",
+      "source": "jbassin",
+      "level": 5,
+      "school": "memetics",
+      "time": [
+        {
+          "number": 3,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a drafting table and 1000gp worth of metallic inks, which the spell consumes",
+          "cost": 1000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You destroy the body of a living humanoid and use the pieces of its soul to construct a new form. The creature must make a Constitution, Wisdom, and Charisma saving throw. On any success, the spell ends. A willing creature may choose to fail all three.",
+        "Due to the volatility of this magic, the race of the new form is selected by the DM (or randomly) from the following table. However, you may make a Charisma (Persuasion) check to influence the result.",
+        {
+          "type": "table",
+          "caption": "Overhaul Races",
+          "colLabels": [
+            "{@dice d100}",
+            "Race"
+          ],
+          "colStyles": [
+            "col-1 text-center no-wrap",
+            "col-11"
+          ],
+          "rows": [
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 1,
+                  "max": 4,
+                  "pad": true
+                }
+              },
+              "{@race aasimar|dmg|Aasimar}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 5,
+                  "max": 6,
+                  "pad": true
+                }
+              },
+              "{@race Dragonborn}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 7,
+                  "max": 8,
+                  "pad": true
+                }
+              },
+              "{@race warforged|erlw|Warforged}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 9,
+                  "max": 13,
+                  "pad": true
+                }
+              },
+              "{@race dwarf (hill)||Dwarf, hill}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 14,
+                  "max": 21
+                }
+              },
+              "{@race dwarf (mountain)||Dwarf, mountain}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 22,
+                  "max": 25
+                }
+              },
+              "{@race elf (drow)||Elf, dark}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 26,
+                  "max": 34
+                }
+              },
+              "{@race elf (high)||Elf, high}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 35,
+                  "max": 42
+                }
+              },
+              "{@race elf (wood)||Elf, wood}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 43,
+                  "max": 46
+                }
+              },
+              "{@race gnome (forest)||Gnome, forest}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 47,
+                  "max": 52
+                }
+              },
+              "{@race gnome (rock)||Gnome, rock}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 53,
+                  "max": 56
+                }
+              },
+              "{@race Half-elf}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 57,
+                  "max": 60
+                }
+              },
+              "{@race Half-orc}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 61,
+                  "max": 65,
+                  "pad": true
+                }
+              },
+              "{@race firbolg|vgm|Firbolg}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 66,
+                  "max": 68
+                }
+              },
+              "{@race halfling (lightfoot)||Halfling, lightfoot}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 69,
+                  "max": 76
+                }
+              },
+              "{@race halfling (stout)||Halfling, stout}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 77,
+                  "max": 80
+                }
+              },
+              "{@race merfolk (ixalan; blue)|psx|Merfolk}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 81,
+                  "max": 84,
+                  "pad": true
+                }
+              },
+              "{@race goliath|vgm|Goliath}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 85,
+                  "max": 96
+                }
+              },
+              "{@race Human}"
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 97,
+                  "max": 0,
+                  "pad": true
+                }
+              },
+              "{@race Tiefling}"
+            ]
+          ]
+        },
+        "Any additional features, such as skin color, age, weight, and so on are completely under your control. The overhauled creature retains all of its abilities and skills from its previous body, but its racial traits and bonus change to match its new form."
+      ]
+    }
+  ]
+}

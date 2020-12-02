@@ -1,0 +1,1593 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "kosmoturgy": {
+        "full": "Kosmoturgy",
+        "short": "Kosm.",
+        "color": "e67e22"
+      }
+    },
+    "dateAdded": 1598811232
+  },
+  "spell": [
+    {
+      "name": "Attraction",
+      "source": "jbassin",
+      "level": 1,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "feet",
+          "amount": 15
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You concentrate gravity around your body. Each creature within 15 feet of you must make a Strength saving throw. On a failed save, a creature takes {@damage 2d8} bludgeoning damage and is pulled up to 10 feet toward you. On a successful save, it takes half as much damage and is not pulled."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "savingThrow": [
+        "strength"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bodydouble",
+      "source": "jbassin",
+      "level": 3,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist space in such a way that you can be in two places at once. You gain control of a double that begins by occupying the same space as you. As a bonus action, you can manifest the double up to 20 feet away from you; you can also use it as the source of any weapon attack you make or spell you cast, as if you were standing in the double's spot. At the end of your turn, the double returns to your space.",
+        "The bodydouble can't be attacked, and is only visible at the moment of attack. It has no real, physical presence except in the moment when it appears."
+      ]
+    },
+    {
+      "name": "Carnage",
+      "source": "jbassin",
+      "level": 8,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a martial weapon"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 1,
+            "type": "minute"
+          },
+          "concentration": true
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "entries": [
+        "You snap, ripping holes in the fabric of space and putting as much force as you can into your attacks. When you cast this spell, you teleport 120 feet and make a melee weapon attack against all creatures within your reach. Roll a single attack for all targets. If you hit a creature, it takes an additional {@dice 6d12} force damage. On your subsequent turns, you can use your action to continue your carnage. Each time you use this action, it has a different effect: ",
+        {
+          "type": "list",
+          "items": [
+            {
+              "name": "2nd Use",
+              "entries": [
+                "You teleport up to 60 feet and make a melee weapon attack against all creatures within a 20-foot-cone. Each creature you hit is knocked prone and takes an additional {@dice 6d12} force damage."
+              ]
+            },
+            {
+              "name": "3rd Use",
+              "entries": [
+                "You teleport up to 30 feet and make a single melee weapon attack against a creature within reach. If the creature is above half its maximum hit points, this attack inflicts an additional {@dice 6d12} force damage. If you hit, the creature is then {@condition paralyzed} until the end of your next turn. "
+              ]
+            },
+            {
+              "name": "4th Use",
+              "entries": [
+                "You teleport up to 60 feet into the air and descend, smashing into the ground at a point of your choosing that you can see within 120 feet of your starting point. You take no falling damage, but each creature within 30 feet of you must make a Constitution saving throw. If they fail, they take {@dice 6d12} force damage. You then make a melee weapon attack targeting a creature within reach. If you hit, the target takes an additional {@dice 8d12} force damage."
+              ]
+            }
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Compressive Weapon",
+      "source": "jbassin",
+      "level": 2,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 3
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You compress the space between your weapon and a creature you can see, reducing the distance required to strike them. You have advantage on your next two attack rolls against the target before the spell ends."
+      ]
+    },
+    {
+      "name": "Disrupt Movement",
+      "level": 1,
+      "school": "kosmoturgy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You send ripples of contracted space toward three separate targets. Each target must make a Dexterity saving throw or its speed is halved and it gains disadvantage on Dexterity ability checks. An affected creature may repeat its saving throw at the end of its turn, ending the effect on a success."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, you can create an additional ripple to target one additional creature for each slot level above 1st."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Distorted Mark",
+      "source": "jbassin",
+      "level": 0,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 5
+        }
+      },
+      "components": {
+        "v": true,
+        "m": "any melee weapon"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 1
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "As a part of the action used to cast this spell, you must make a melee attack with a weapon against a creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal affects and the space around the target is slightly distorted. The next time the creature is hit by an attack from a creature other than you, the attack deals thunder damage equal to your spellcasting modifier as the distorted area decompresses.",
+        "The spell's damage increase by 1d8 when you reach 5th level ({@dice 1d8} + modifier), 11th level ({@dice 2d8} + modifier), and 17th level ({@dice 3d8} + modifier)."
+      ],
+      "damageInflict": [
+        "thunder"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Djura's Divine Protection",
+      "source": "jbassin",
+      "level": 9,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of folded steel"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You grant up to eight willing creatures within range a hardened layer of air compressed to the point of becoming solid around their bodies. For the duration of the spell, the target creatures gain resistance to bludgeoning, piercing, slashing, and force damage. Additionally, all affected creatures have advantage on death saving throws."
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "damageResist": [
+        "bludgeoning",
+        "piercing",
+        "slashing",
+        "force"
+      ]
+    },
+    {
+      "name": "Djura's Divine Razor",
+      "source": "jbassin",
+      "level": 5,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a martial melee weapon"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 1,
+            "type": "minute"
+          }
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "entries": [
+        "You sharpen your blade to cut through the fabric of reality itself. The first time you hit with a melee weapon attack during this turn, your attack inflicts an additional {@damage 2d10} force damage, and the target becomes afflicted by a malignant curse. Until the spell ends, whenever you take the Attack action, you can choose to attack the cursed creature regardless of distance or obstacles, and these attacks deal an additional {@damage 1d10} force damage, ignore cover, and cannot suffer disadvantage."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Djura's Righteous Pressure",
+      "source": "jbassin",
+      "level": 4,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "holy symbol"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You radiate a great pressure in a 30-foot radius that is anathema to undead and fiends. Any undead or fiend that enters the aura or begins its turn in the aura takes {@damage 2d6} radiant damage and must make a Constitution saving throw; if the saving throw fails, the creature is forced out of the radius and cannot attempt to reenter until its next turn."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When cast with a spell slot higher than 4th, the pressure may affect all humanoids as well as undead and fiends."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Fault Line",
+      "source": "jbassin",
+      "level": 6,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "dispel"
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You rupture the ground along a 60-foot line that you designate. All spaces affected by the spell become difficult terrain. In addition, all creatures in an affected space are knocked {@condition prone} and take {@damage 8d6} bludgeoning damaging. Creatures that make a successful Dexterity saving throw take half damage and are not knocked prone.  This spell doesn't damage permanent structures."
+      ],
+      "miscTags": [
+        "PRM"
+      ]
+    },
+    {
+      "name": "Flicker",
+      "source": "jbassin",
+      "level": 3,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a tuft of displacer beast fur"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You gain better control of the eddies in the space around you, letting you find small shortcuts from place to place. For the duration of the spell, you can use your bonus action to teleport 5 feet. Additionally, when you are targeted by an attack you can use your reaction to attempt to teleport out of harm's way. Roll a d20. On a roll of 11 or higher, the attack automatically misses, and you teleport 5 feet. Otherwise, the attack is made as normal and you teleport 5 feet shortly after."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Forceful Charge",
+      "source": "jbassin",
+      "level": 4,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You're pushed forward at extreme speed. In the act of casting this spell, you expend all of your movement to move in a straight line. You may make an attack against every creature you pass in the movement. On a successful hit, the creature falls {@condition prone} as well as suffers the effects of the attack. You do not provoke opportunity attacks while moving in this fashion."
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
+    },
+    {
+      "name": "Forceful Onslaught",
+      "source": "jbassin",
+      "level": 7,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You generate great pressure behind all of your attacks, letting you move faster and hit harder. While the spell is active you have advantage on all attack rolls, ability checks, and skill checks based on Strength or Constitution. In addition, you deal {@damage 1d8} additional damage with melee weapons. Furthemore, at the beginning of each of your turns, you gains 10 temporary hit points. The temporary hit points vanish when the spell ends.",
+        "While the spell is active you can will your body to move even past the point when you should have fallen unconcious. When you drop to 0 hit points, you do not drop {@condition unconscious}, but can keep acting normally. You must make death saving throws, however, and you dies if you fail three times. You cannot be stabilized while you continue to fight and cast offensive spells at 0 hit points, either by a Wisdom (Medicine) skill check or by a third successful death saving throw. If the spell ends, you fall {@condition unconscious} and all normal rules for that situation take over."
+      ],
+      "opposedCheck": [
+        "strength"
+      ]
+    },
+    {
+      "name": "Gravity Anvil",
+      "source": "jbassin",
+      "level": 7,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 400
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "One creature you can see must make a Dexterity saving throw to evade an anvil of pure force that you summon to crush it. If the saving throw fails, the creature takes {@dice 10d10} force damage and is {@condition incapacitated}. On a successful save, the creature takes half damage and is not otherwise affected.",
+        "An {@condition incapacitated} creature can repeat the saving throw at the end of each of its turns; a successful save ends the incapacitation."
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "conditionInflict": [
+        "incapacitated"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Hypercompression",
+      "source": "jbassin",
+      "level": 8,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You condense gravity into an immeasurably dense orb at a point you can see within the spell's range. The orb fills a 10-foot radius sphere around it with darkness, which no light, magical or mundane, can illuminate.",
+        "When a creature enters within 30 feet of the orb for the first time on a turn or starts its turn there, it must make a Strength saving throw or be pulled 10 feet toward the orb. When a creature enters within 5 feet of the orb for the first time on a turn or starts its turn there, it must make a Constitution saving throw, taking {@damage 10d10} bludgeoning damage on a failed save or half as much on a successful one.",
+        "The orb's gravitation makes moving away from it incredibly difficult. While within 10 feet of the orb, a creature moving away from the orb must spend 4 feet of movement for every 1 foot it moves. While within 30 feet of the orb, a creature moving away from the orb must spend 2 feet of movement for every 1 foot it moves.",
+        "In addition, unsecured objects that are completely within the area of effect are automatically pulled into orb. Small nonmagical objects that come within 5 feet of the orb are immediately destroyed."
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "savingThrow": [
+        "strength",
+        "constitution"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Kosmoturgist's Armor",
+      "source": "jbassin",
+      "level": 6,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of wrought iron"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You grant one willing creature a hardened layer of air compressed to the point of becoming solid around their body. For the duration of the spell, the target creature gains resistance to bludgeoning, piercing, slashing, and force damage. You may not have this effect active on multiple creatures at the same time."
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "damageResist": [
+        "bludgeoning",
+        "piercing",
+        "slashing",
+        "force"
+      ]
+    },
+    {
+      "name": "Kosmoturgist's Weapon",
+      "source": "jbassin",
+      "level": 7,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a necklace made from a pure precious metal"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You compress a space within range into a floating, ethereal weapon that lasts for the duration or until you cast this spell again. When you cast this spell and as on a bonus action on each of your subsequent turns for the duration, you may move the weapon up to 20 feet and choose one of the following commands:",
+        {
+          "type": "entries",
+          "name": "",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Attack",
+              "entries": [
+                "The weapon makes a melee spell attack. On a hit, the target takes {@dice 3d10} + your spellcasting ability modifier force damage."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Defend",
+              "entries": [
+                "The weapon guards a creature of your choice within 5 feet, granting it partial cover. The first time a hostile creature comes within 5 feet of the weapon, it will attack that creature, making a melee spell attack with your spell modifier. On a hit the creature takes {@dice 3d10} + your spellcasting ability modifier force damage, and the sword becomes dormant until the beginning of your next turn."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Control",
+              "entries": [
+                "The weapon begins to rapidly spin, controlling movement through its space. Creatures that start their turn within or enter the weapon's space must make a Dexterity saving throw against your spell save DC or take {@dice 4d10} force damage."
+              ]
+            }
+          ]
+        },
+        "The weapon can take whatever form you choose. Clerics of dieties who are associated with a particular weapon (as Bhaal is known for its twisted dagger and Mask for its garrote) may prefer to make this spell's effect resemble that weapon."
+      ],
+      "damageInflict": [
+        "force"
+      ]
+    },
+    {
+      "name": "Left Hand of Judgment",
+      "source": "jbassin",
+      "level": 4,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You exert a subtle gravity on those around you. For the duration of the spell, when an opponent strikes you with a melee attack you may use a reaction to pull them off-balance and make a melee attack."
+      ]
+    },
+    {
+      "name": "Mark of Protection",
+      "source": "jbassin",
+      "level": 4,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 8,
+            "type": "hour"
+          }
+        }
+      ],
+      "entries": [
+        "You touch a creature and place a mark upon them, granting them your protection. Whenever the target would take damage, you can use your reaction to instantly swap places with them, taking that damage in their stead. If this would reduce you to 0 hit points, you are reduced to 1 hit point instead, and the spell ends. You can place this mark upon multiple creatures at the same time, provided you expend an appropriate spell slot for each. "
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oblivion",
+      "source": "jbassin",
+      "level": 5,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "amount": 40,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "damageInflict": [
+        "necrotic",
+        "bludgeoning"
+      ],
+      "entries": [
+        "You rapidly compress and expand the space around you, exerting extreme force on the surrounding creatures. Each creature within a 40-foot radius area around you (including yourself) must make a Dexterity saving throw. A target takes {@damage 6d8} necrotic and {@damage 6d8} bludgeoning damage on a failed save, or half as much on a successful one.",
+        "When you cast this spell, you can choose to take 10 points of necrotic damage, ignoring both damage resistance and immunity. If you do so, you can choose a number of creatures in the area equal to your spellcasting modifier. The chosen creatures automatically succeed on the saving throw against this spell."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Propagating Blast",
+      "source": "jbassin",
+      "level": 2,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "amount": 30,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "any melee weapon"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "entries": [
+        "When you cast this spell, your weapon hums with violent energy. The first time you could make a melee weapon attack before the end of your current turn, you can launch a pulsing ball of force from your weapon instead. This force travels in a straight line for 30 feet, splitting space apart as it travels.",
+        "Each creature within a line 5 feet wide and 30 feet long must make a Dexterity saving throw, starting from the creature closest to you. The first creature that fails takes {@damage 2d8} force damage and suffers damage and effects as though you had hit them with a successful attack using that weapon. "
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the force damage increases by {@scaledice 2d8|2-9|1d8} per slot level above 2nd.",
+            "Additionally, when you cast this spell using a spell slot of 4th level or higher, the penetrating power of the force increases. The force may continue through an additional creature for each spell level expended above 3rd."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Raise Island",
+      "source": "jbassin",
+      "level": 7,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 300
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a 5-foot cube of granite, consumed by the spell"
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You rip a slab of bare rock 100 feet to a side and 10 feet thick that floats 10 feet off the ground. As an action, you may direct the slab to move in any direction, including up. It moves at a rate of 10 feet per round, and will continue to move in the direction you give it until you command it to stop."
+      ]
+    },
+    {
+      "name": "Reposition",
+      "level": 1,
+      "school": "kosmoturgy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist the fabric of space, moving a creature to a more favorable position. You move one creature up to 10 feet. If the creature is hostile they must succeed on a Constitution saving throw against your spell DC to ignore the effect. The movement can go through the space of other creatures, but it cannot pass walls or other solid obstructions. The movement does not provoke opportunity attacks."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a 2nd level spell slot or higher, the number of creatures you can target with this spell increases by one for each slot level above first."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Retributive Force",
+      "source": "jbassin",
+      "level": 1,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 1,
+            "type": "minute",
+            "upTo": true
+          }
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "entries": [
+        "The first time you hit with a melee weapon attack during this spell's duration, retributive energy rushes through your weapon. The attack deals an extra {@damage 1d6} force damage to the target. Additionally, the target must succeed on a Constitution saving throw or suffer the following effect. When one makes a melee attack on their turn while under the effect of this spell, the force of their attack is returned back to them. They are launched backwards ten feet and fall {@condition prone} from the force. This movement does not provoke opportunity attacks, and the creature may repeat its saving throw at the end of its turn."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the force damage increases by {@scaledice 1d6|1-9|1d6} per spell slot level above 1st."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Right Hand of Judgment",
+      "source": "jbassin",
+      "level": 4,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You rob the force behind enemies' attacks and turn it back on them. For the duration of the spell, taking the dodge action grants you a charge. When you make a successful attack, you may expend a charge to turn the normal hit into a critical hit. Charges disappear when the spell ends."
+      ]
+    },
+    {
+      "name": "Summon Heart",
+      "source": "jbassin",
+      "level": 6,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You exert a strong gravitational pull on the heart of one living creature you can see within range. The target must succeed on a Constitution saving throw or else takes {@dice 6d10 + 20} necrotic damage, or half damage on a success. If the creature is reduced to 0 hit points by this attack, the creature's heart is ripped out of its chest and flies to your hand; the creature dies instantly."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Swap",
+      "level": 3,
+      "school": "kosmoturgy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist the fabric of space, swapping the position of two creatures. You can select any two creatures within range and switch their positions. If either creature is hostile they must succeed on a Constitution saving throw against your spell DC to ignore the effect. The swap does not provoke opportunity attacks, but it does maintain momentum for both of the swapped parties."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a 4th level spell slot or higher, the number of creatures you can target with this spell increases by one for each slot level above third."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Weight of the World",
+      "source": "jbassin",
+      "level": 5,
+      "school": "kosmoturgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You place a great burden on those around you. All creatures within 60 feet of a point you choose in range must make a Constitution saving throw. If the saving throw fails, the creature moves at half speed, has disadvantage on attack rolls, and has disadvantage on Strength and Dexterity ability and skill checks. It also gains one level of {@condition exhaustion} if it uses the Dash action."
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "exhaustion"
+      ]
+    }
+  ]
+}

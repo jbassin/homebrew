@@ -1,0 +1,1709 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "planara": {
+        "full": "Planara",
+        "short": "Plan.",
+        "color": "8e44ad"
+      }
+    },
+    "dateAdded": 1598811669
+  },
+  "spell": [
+    {
+      "name": "Ashen Pack",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 10,
+            "type": "minute",
+            "upTo": true
+          }
+        }
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "damageInflict": [
+        "fire"
+      ],
+      "savingThrow": [
+        "strength"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "entries": [
+        "With a gesture, you draw upon the depths of the Abyss to summon three flaming wolves made from ash into your space. When you cast this spell, and as an action on each of your turns while it is in effect, you can choose a creature within 60 feet of you. When you do, one of the flaming wolves rushes to the creature, making a melee spell attack using your spell attack modifier. If the attack hits, the target takes {@damage 4d10} fire damage and must succeed on a Strength saving throw or they are knocked {@condition prone}. The flaming wolf then immediately returns to your space, coiling around your feet. The wolves have an AC equal to your spell save DC. If a flaming wolf is struck by a weapon or spell attack or is prevented from returning to your space after making an attack, it vanishes. The spell ends when all three wolves are lost, or you lose concentration."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the fire damage of the wolf's attack increases by {@scaledice 4d10|4-9|1d10} per spell slot level above 4th."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Bubble Bubble",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a capful of soap"
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon a bubble from the Feywild that floats quickly toward a point within range. All creatures within five feet of the bubble must make a Dexterity saving throw. The bubble pops, covering all creatures who failed the throw with goop. Creatures covered with goop suffer a -2 penalty to attack rolls and Dexterity checks, and their speed is reduced by 10 feet. In addition, creatures covered in bubble goop can't cast spells with somatic components.",
+        "The bubble goop remains until the affected creature uses an action to make a Dexterity check against your spell DC to scrape it off."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 4th level, you can create one additional bubble. Each bubble can be targeted against a different creature."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Darkseeker's Aura",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small piece of a poisonous beetle"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "A swirling mist of corrosive black vapor from Gehenna engulfs your body for the duration of this spell. Any creature that strikes you with a melee attack takes {@damage 4d6} acid damage, and you gain resistance to acid damage.",
+        "As an action, you can make a melee spell attack against one creature within your reach; a hit does {@damage 10d6} acid damage and ends this spell."
+      ],
+      "damageInflict": [
+        "acid"
+      ],
+      "damageResist": [
+        "acid"
+      ],
+      "spellAttack": [
+        "M"
+      ]
+    },
+    {
+      "name": "Darkseeker's Restraint",
+      "level": 5,
+      "school": "planara",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "1 foot of iron chain"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon great binding chains from Gehenna to restrain a target. Choose a creature you can see within 90 feet. The target must make a successful Wisdom saving throw or be {@condition restrained} by stygian chains and take {@damage 6d8} bludgeoning damage. A restrained creature repeats the saving throw at the end of its turns, ending the effect on itself with a successful save. While restrained this way, the creature also takes {@damage 6d8} bludgeoning damage at the start of each of its turns."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Eldrich Horror",
+      "source": "jbassin",
+      "level": 9,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 150
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "black pearl worth at least 500 gp, which is consumed in the casting",
+          "cost": 500,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a portal to the Far Realms inside a 10-foot circle that opens in the floor centered on a point you can see. Creatures standing on the portal when it opens can make a Dexterity saving throw to jump to the nearest safe space and avoid being drawn through the portal inadvertently.",
+        "Immediately after the portal appears, four 30-foot-long tendrils emerge from it. When you cast the spell and at the beginning of each of your turns, each tendril tries to grapple one creature; you select the targets. Make a melee spell attack for each tendril. If it hits, the target is {@condition grappled} and dragged 10 feet toward the portal. Instead of attacking, a tendril that already has a creature {@condition grappled} drags it another 10 feet closer to the portal. {@condition Grappled} creatures can escape by making appropriate ability checks against your spell saving throw DC.",
+        "Creatures that fall or are pulled into the portal no longer exist on the plane where Eldrich Horror was cast; they are inside the realm where the tendrils originate. They must make Constitution saving throws at the start of each of their turns. If the saving throw fails, the creature takes {@damage 4d6} necrotic damage and its maximum hit points are reduced by the same number. As an action, the creature can try to escape by making a Strength check against your spell saving throw DC at the end of their turn; if it succeeds, it appears in the unoccupied space closest to the portal.",
+        "When the spell ends, creatures pulled through the portal reappear in the portal's space, alive or dead."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "dexterity",
+        "constitution"
+      ],
+      "opposedCheck": [
+        "strength"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Excavation",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 50
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a mole's claw"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "For the duration of this spell, you can excavate a cube 10 feet to a side of earth, sand, stone, or mud each round. You can expand an existing hole or start a new one. You can't dig through artifically constructed stone, such as in a building or wall. The earth removed from the hole is returned to the Plane of Earth.",
+        "You can also use this spell to tunnel through earth. If the tunnel is longer than 10 feet, it has a 30% chance of collapsing (1â€“6 on {@damage 1d20}), +5% for every 5 feet beyond 30 feet, unless the tunnel is braced or supported.",
+        "Most creatures can easily react quickly enough to step aside automatically if you try digging beneath them, no saving throw necessary."
+      ]
+    },
+    {
+      "name": "Extraplanar Beam",
+      "source": "jbassin",
+      "level": 6,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "feet",
+          "amount": 100
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You fire a beam of pulsing violet light harvested from the space between planes. You produce a beam of radiance in a line, 100 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw. A target takes {@damage 10d8} radiant damage and is {@condition blinded} for 1 minute on a failed save, or half as much damage and is not {@condition blinded} on a successful one.",
+        "A creature {@condition blinded} by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@damage 1d8} for each slot level above 6th."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "dexterity",
+        "constitution"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Extraplanar Pulse",
+      "source": "jbassin",
+      "level": 2,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You hurl a ball of pulsing violet light harvested from the space between planes. Make a ranged spell attack against a single creature within range. On a hit, it takes {@damage 4d6} radiant damage and must make a Constitution save or be {@condition poisoned} for 1 minute. The target can repeat this save at the end of each of its turns, ending the effect on a success."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@damage 1d6} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Falling Star",
+      "source": "jbassin",
+      "level": 5,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "amount": 600,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "entries": [
+        "You summon a sliver of pure, solid phlogiston at a point within range. All creatures within a 30-foot-radius sphere around the point must make a Constitution saving throw to steel against the detonation. If they fail, they take {@damage 10d6} radiant damage, or half as much damage if they succeed. This spell creates bright light that shines in a 100-foot radius until the end of your next turn, and this light counts as natural sunlight."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the radiant damage increases by {@scaledice 10d6|5-9|1d6} per spell slot level above 5th."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Gallows",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "year",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "One creature you can see must succeed on a Wisdom saving throw or else it becomes linked to a structure of your choosing in view. If the creature dies during the duration of the spell, its body is instantly teleported to the structure and bound to it by stout ropes."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Glitterdust",
+      "source": "jbassin",
+      "level": 3,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "amount": 15,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a handful of glitter"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "amount": 1,
+            "type": "minute"
+          }
+        }
+      ],
+      "entries": [
+        "You summon a cloud of small golden shards of Elysium in a 15ft cone, covering all creatures and objects in that area. Any creature affected by the spell must make a Constitution save or be blinded for the duration. They may repeat the save at the end of each of their turns.",
+        "All attack rolls against a creature or object covered in glitter have advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+        "The glitter disappears 1 minute after being conjured."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grey Frost",
+      "source": "jbassin",
+      "level": 7,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sliver of glass"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You manifest the brutal cold of the Grey Waste in a creature you touch. The creature must make a Constitution saving throw. If the saving throw fails, the creature is {@condition restrained} for the duration as its body becomes covered in ice, and it takes {@dice 3d8} cold damage at the start of each of its turns. On a successful save, it takes {@dice 5d8} cold damage immediately but suffers no other effect.",
+        "A creature {@condition restrained} by the spell repeats the saving throw at the end of each of its turns. If the saving throw fails, the creature completely freezes and becomes ice; treat it as {@condition petrified}. If the creature makes three successful saving throws (which don't need to be consecutive), the spell ends and it is no longer {@condition restrained}. Note that the creature continues making Constitution saving throws even while {@condition petrified}, unless the condition becomes permanent (see below).",
+        "If the caster maintains concentration for the full minute, a creature turned to ice is permanently frozen in that form; it stops making Constitution saving throws to end the effect. It remains frozen, however, only if the ambient temperature is below freezing. The creature can be returned to normal by being gradually thawed."
+      ],
+      "damageInflict": [
+        "cold"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "petrified",
+        "restrained"
+      ],
+      "miscTags": [
+        "PRM"
+      ]
+    },
+    {
+      "name": "Hardlight Bridge",
+      "source": "jbassin",
+      "level": 3,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a tiny model bridge"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "meta": {
+        "ritual": true
+      },
+      "entries": [
+        "You summon a sliver of the crystal sphere between two points. The sliver forms a bridge that is up to 60 feet long and 10 feet wide. Both ends of the bridge must be within the spell's range, and both must be solid objects that can support the weight of whatever physical objects cross the bridge. The bridge itself has no weight."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast air bridge using a slot of 5th level or higher, the bridge is substantial only to those you nominate; to all others, it does not exist. This is also true if you cast the spell as a ritual and are capable of casting 5th level spells."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Instant Exit",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You cause a doorlike portal to appear on a nearby wall you can see. Any creature that steps through the portal is instantly teleported to a random location within 1,000 feet of the door. You have no control over where the creatures are transported, but all creatures that step through will be transported to the same location. The door disappears at the end of your next turn.",
+        "There is a 5% chance the spell malfunctions and instead leads to a random plane. This is determined once, the first time a creature steps through the portal, and applies throughout the spell's duration."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Move the Cosmic Wheel",
+      "level": 8,
+      "school": "planara",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a music box worth at least 250 gp attuned to a particular plane of existence",
+          "cost": 250
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You wind your music box and call forth a piece of another plane of existence with which you are familiar, either through personal experience or intense study. The magic creates a bubble of space with a 30-foot radius within range of you and at a spot you designate. The portion of your plane that's inside the bubble swaps places with a corresponding portion of the plane your music box is attuned with.",
+        "There is a 10% chance that the portion of the plane you summon arrives with native creatures on it. Inanimate objects and non-ambulatory life (like trees) are cut off at the edge of the bubble, while living creatures that don't fit inside the bubble are shunted outside of it before the swap occurs. Otherwise, creatures from both planes that are caught inside the bubble are sent along with their chunk of reality to the other plane for the duration of the spell unless they make a successful Charisma saving throw when the spell is cast; with a successful save, a creature can choose whether to shit planes with the bubble or leap outside of it a moment before the shit occurs.",
+        "Any natural reaction between the two planes occurs normally (fire spreads, water glows, etc.) while energy (such as necrotic energy) leaks slowly across the edge of the sphere (no more than a foot or two per hour). Otherwise, creatures and effects can move freely across the boundary of the sphere; for the duration of the spell, it becomes a part of its new location to the fullest extent possible, given the natures of the two planes. The two displaced bubbles shift back to their original places automatically after 24 hours."
+      ],
+      "savingThrow": [
+        "charisma"
+      ]
+    },
+    {
+      "name": "Patishvat's Perfect Pocket",
+      "level": 1,
+      "school": "planara",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small velvet bag"
+      },
+      "duration": [
+        {
+          "type": "permanent",
+          "ends": [
+            "discharge"
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a pocket of extraplanar space to hold knick-knacks. Once created, the pocket remains tied to your person and only disappears once dispelled. You may spend an action to store any non-living object that fits in a 5x5x5 foot cube in the pocket. You may also spend an action to retrieve anything placed in the pocket back into your hand. The space has a limit of 150 pounds, and if this limit is exceeded or the pocket is dispelled all of the pocket's contents are emptied onto the ground in front of the caster. The pocket is normally invisible, but a creature with truesight can see it as an opaque, floating orb circling the caster's head."
+      ]
+    },
+    {
+      "name": "Planar Pyre",
+      "source": "jbassin",
+      "level": 3,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "amount": 60,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small, sharpened quartz"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "entries": [
+        "You call forth shards of planar crystal coated in phlostigon from the ground around a target of your choosing. The target must make a Dexterity saving throw. Creatures that are Huge or larger make this saving throw with advantage. If they fail, the target is impaled by the spikes and {@condition restrained} until the start of your next turn, taking {@damage 2d8} fire damage and {@damage 3d8} piercing damage. If the target succeeds, they take half as much damage and are not restrained. The spikes fade into dust at the start of your next turn. If the target is slain by this spell, the spikes do not fade, but instead remain and become mundane objects."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the fire damage or the piercing damage (your choice) increases by {@scaledice 2d8;3d8|3-9|1d8} per slot level above 3rd."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Planar Shield",
+      "source": "jbassin",
+      "level": 2,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You manifest the phlogiston from between planes as a protective layer on your shield. As a reaction to a melee attack, you may cause some of the phlostigon on your shield to burst, causing all creatures within 5 feet of you to take {@damage 2d6} radiant damage. You may do this four times before you've expended all of the phlostigon and the spell ends."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@damage 1d6} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiant"
+      ]
+    },
+    {
+      "name": "Solar Fury",
+      "source": "jbassin",
+      "level": 6,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You become a conduit for the great light of Elysium. Your body glows intensely, giving off bright light in a 60-foot radius and dim light for a further 60 feet. For the duration of the spell, you gain immunity to fire damage. You also radiate heat in a 20-foot radius; each creature that begins its turn within 20 feet of you takes {@damage 4d6} fire damage, or half damage with a successful Dexterity saving throw."
+      ],
+      "damageInflict": [
+        "fire"
+      ],
+      "damageImmune": [
+        "fire"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Solar Rebuke",
+      "source": "jbassin",
+      "level": 5,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "which you take in response to being damaged by a creature within 60 feet of you that you can see."
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "amount": 60,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "charisma"
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "entries": [
+        "You draw a searing light from the peak of Elysium to strike down your attacker. The creature must make a Charisma saving throw. If they fail, they are {@condition blinded} until the start of your next turn and take {@damage 5d10} radiant damage. On a success, they take half as much damage and are not blinded."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawn Abyssal Sprite",
+      "source": "jbassin",
+      "level": 7,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 200
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "finger bone of a demon"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon an angry sprite from the depths of the Abyss to attack one creature you can see within range. Make a ranged spell attack against the target. On a hit, the bolt does {@damage 12d6} necrotic damage. The bolt then leaps to another target within 50 feet of the previous target that hasn't already been targeted by the spell; you choose which target to attack, if more than one is available. The effect continues attacking creatures one after another in a chain until it misses or there are no more creatures eligible to be hit."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Summon Servant",
+      "level": 1,
+      "school": "planara",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a small metal tuning fork"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon and bind a tiny, extraplanar spirit to your service. The spirit enters battle immediately after you in the initiative order, and can only take the Attack and Dash actions. You can direct the spirit as a free action on your turn, and it will carry out your orders to the best of its ability. You choose the general appearance of the spirit, but it must be the size dictated by the spell slot expended.",
+        "The summoned spirit has a Constitution of 10, Intelligence and Wisdom 3, Charisma 1, and deals force damage. Other characteristics are determined by the spirits's size as follows.",
+        {
+          "type": "table",
+          "caption": "Bound Spirit Statistics",
+          "colLabels": [
+            "Size",
+            "HP",
+            "AC",
+            "Attack",
+            "Str",
+            "Dex",
+            "Spell Slot"
+          ],
+          "colStyles": [
+            "col-2",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-6",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center"
+          ],
+          "rows": [
+            [
+              "Tiny",
+              "15",
+              "12",
+              "{@hit +3} to hit, {@damage 1d4+4} damage",
+              "{@damage 1d20-3|4}",
+              "{@damage 1d20+3|16}",
+              "1st"
+            ],
+            [
+              "Small",
+              "25",
+              "13",
+              "{@hit +4} to hit, {@damage 1d8+2} damage",
+              "{@damage 1d20-2|6}",
+              "{@damage 1d20+2|14}",
+              "2nd"
+            ],
+            [
+              "Medium",
+              "40",
+              "14",
+              "{@hit +5} to hit, {@damage 2d6+1} damage",
+              "{@damage 1d20+0|10}",
+              "{@damage 1d20+1|12}",
+              "3rd"
+            ],
+            [
+              "Large",
+              "50",
+              "15",
+              "{@hit +6} to hit, {@damage 2d10+2} damage",
+              "{@damage 1d20+2|14}",
+              "{@damage 1d20+0|10}",
+              "4th"
+            ],
+            [
+              "Huge",
+              "80",
+              "16",
+              "{@hit +8} to hit, {@damage 2d12+4} damage",
+              "{@damage 1d20+18|18}",
+              "{@damage 1d20-1|8}",
+              "5th"
+            ],
+            [
+              "Gargantuan",
+              "100",
+              "17",
+              "{@hit +10} to hit, {@damage 4d8+6} damage",
+              "{@damage 1d20+5|20}",
+              "{@damage 1d20-2|6}",
+              "6th"
+            ]
+          ]
+        }
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "Casting this spell using higher level spell slots allows you to increase the size of the summoned spirit, as shown on the table."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "source": "jbassin",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "special"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You draw the unstable magic essence from between planes into your body, glowing brightly in the process. As part of any successful melee attack, as an action, or as a reaction to a successful melee attack against you, you may transfer this magic into the body of another creature. Each time the magic is transferred, there is a chance of its new host losing control and explosively expelling the magic. The first time the magic is transferred there is a 10% chance of this occurring. This chance increases by 10% each time it transfers. If you hold the magic for one full round, you must increase the chance by 30% and roll as if it was transferred to you.",
+        "The unlucky creature who releases the magic must make a Constitution saving throw and take {@dice 5d8} fire and {@dice 5d8} psychic damage on a failure, or half that on a success.",
+        "A creature cannot transfer the energy back to who they recieved it from. In essense -- no tagbacks."
+      ],
+      "damageInflict": [
+        "fire",
+        "psychic"
+      ]
+    },
+    {
+      "name": "Umbral Assimilation",
+      "source": "jbassin",
+      "level": 6,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false,
+        "hemomancy": false
+      },
+      "entries": [
+        "You draw upon the shades of Carceri to shield you from sight. Until the spell ends shadows swirl around you and you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "At the start of each of your turns, you turn {@condition invisible}. If you attack or cast a spell, this invisibility ends.",
+            "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.",
+            "You can use your action to create a 15-foot radius sphere of magical darkness centered on a point you can see within 60 feet of you, as per the {@spell darkness} spell. This darkness lasts for the duration, or until you activate this ability again."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "invisible"
+      ],
+      "areaTags": [
+        "S"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SGT"
+      ]
+    }
+  ]
+}

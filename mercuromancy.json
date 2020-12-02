@@ -1,0 +1,1232 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "mercuromancy": {
+        "full": "Mercuromancy",
+        "short": "Merc.",
+        "color": "2980b9"
+      }
+    },
+    "dateAdded": 1598810863
+  },
+  "spell": [
+    {
+      "name": "Awkward",
+      "source": "jbassin",
+      "level": 4,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a broken mirror"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You cause a creature to temporarily lose some of its charisma. The targeted creature must make a Wisdom saving throw. If the saving throw fails, it subtracts {@damage 1d6} from any Charisma checks, saving throws, and attack rolls, and it is unable to benefit from advantage on those checks. It can't use any ability that would allow rerolls on these checks because it is unaware that the performance is going poorly."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Charming",
+      "source": "jbassin",
+      "level": 5,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 12
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist fate to make you naturally more charming. When you cast the spell, each creature that can see you must make a Wisdom saving throw (with advantage if you or your companions are fighting it). If the saving throw fails, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. {@condition Charmed} creatures regard you as a friendly acquaintance. When the spell ends, affected creatures do not realize they were {@condition charmed} by you."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ]
+    },
+    {
+      "name": "Do My Bidding",
+      "source": "jbassin",
+      "level": 7,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 10,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You ask fate for the right words to rally a crowd to your cause. You can sway a large group of people toward accomplishing a specific goal. You must speak emphatically on the subject for 10 minutes, playing on the crowd's emotions and reason, to inflame their fervor for or against a cause or person. You must be clear about the specific goal you want to achieve. For example, shouting that \"The Church of Reostadt is evil and corrupt!\" might make people dislike the church, but it won't spur them to action because it doesn't tell them what to do. Adding \"Follow me, and we'll burn it to the ground!\" will send a crowd of torch-bearing arsonists to Xanathar himself.",
+        "The spell affects all sentient creatures that are able to hear and understand you within 60 feet.",
+        "When you finish casting the spell, all potential targets of the spell who fail a Wisdom saving throw are compelled to follow your instructions for the duration of the spell, as long as those orders are in keeping with the goal stated in the speech and you personally lead them. If these conditions aren't met, the spell ends and the crowd becomes hostile toward you. The spell also ends when the goal has been achieved. If the goal is achieved or the duration ends naturally, those under the affect of the spell do not realize they were charmed by you."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Extra Motivation",
+      "source": "jbassin",
+      "level": 9,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You ask fate to grant you just a little more energy, and your wish is granted. You regain 4 spell slots of 5th level or lower.",
+        "When you cast this spell, you can choose take more than is offered, rejuvenating yourself even more greatly for a price. You may willingly take necrotic damage equal to half your current hit points. This damage ignores both damage resistance and damage immunity. If you do so, you regain the expended uses of up to three abilities which normally recover when you take a rest.",
+        "Once you cast this spell, you cannot cast this spell again for 24 hours, even if you have an available 9th level spell slot."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fumble",
+      "source": "jbassin",
+      "level": 4,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a broken finger bone"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist the strands of fate to make a creature more clumsy than normal. A creature you can see must make a Wisdom saving throw against your spell DC or become cursed with clumsiness. While cursed, the creature must make a Dexterity saving throw whenever it moves 20 feet or farther during its turn. If the saving throw fails, the creature falls {@condition prone} at the end of the movement. It also must make a Dexterity saving throw at the end of each of its turns in which it attacked with a hand-held weapon. If the saving throw fails, it drops the weapon.",
+        "The spell ends early if the creature rolls a natural 20 on any of the saving throws required by the spell."
+      ],
+      "savingThrow": [
+        "wisdom",
+        "dexterity"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Healing Draught",
+      "source": "jbassin",
+      "level": 6,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sealed, opaque glass bottle"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You twist luck to ensure that the bottle you're holding has just the drink you need. The next bottle you open after casting this spell will contain a powerful healing potion. Any creature that consumes the potion during the spell's duration regains {@dice 10d6} hit points; any diseases it has are cured, poison is neutralized, and lost ability points are restored. The bottle contains enough potion to affect three creatures."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 6th level, the potion heals an additional {@scaledice 10d6|6-9|2d6} hit points and one additional dose is created."
+          ]
+        }
+      ],
+      "miscTags": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Gambler's Trick",
+      "source": "jbassin",
+      "level": 0,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 5
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "Gently pulling on the threads of luck, you move a small act of chance in your favor. When a coin is flipped, a die is rolled, a card is pulled, or some other minor act that involves chance occurs, you can tweak the outcome to what you wish."
+      ]
+    },
+    {
+      "name": "Lesser Wish",
+      "source": "jbassin",
+      "level": 2,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You briefly experience your life as it would have been had you taken a different path. You pull on your alternate version's spellcasting ability to cast any 1st level spell that takes either an action or bonus action to cast and is not from an exotic school of magic. You must still fulfill the requirements of the spell (such as material components), but the spell uses your normal spellcasting modifier and does not consume an additional spell slot.",
+        "Each time you cast this spell the movement between streams of fate puts immense stress on your body. When you cast this spell roll a {@damage d20}. If the result is a one the stress becomes too much and your hit points are reduced to zero. Each time you cast this spell the die reduces from a {@damage d20} to a {@damage d12} to a {@damage d10} and so on. The die resets back to a {@damage d20} on a long rest."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you gain the ability to test fate further. When a 3rd level slot is expended you may select any spell 2nd level or lower, but the stress threshold is raised from one to two. This pattern continues on: cast at 4th level you may replicate a 3rd level spell but the threshold is raised from two to three, and so on."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Let's Start a Fight",
+      "level": 5,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "jbassin",
+      "entries": [
+        "You ask fate for a word to incite violence and shout it into a crowd or group of at least 15 targets. The DM assigns a probability of success, taking into consideration the average Wisdom of the targets. For example, a tavern full of brigands and ruffians may have a 90% chance of success, while a group of nobles at a fancy dinner party may have only a 10% chance of success. If successful, the spell causes all of the targets to immediately attack the closest target to them with whatever non-weapon item they have available. These items include tankards, plates, chairs, stools, etc. The spell lasts for up to one minute, or until most of the targets are unconscious save one. The caster is unable to revoke the spell's effects before it has run its course."
+      ]
+    },
+    {
+      "name": "Lockstep Fate",
+      "source": "jbassin",
+      "level": 2,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a pair of identical pebbles"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You tie your fate to another. A creature you can see must make a Wisdom saving throw or your luck becomes entangled with theirs. For the duration of the spell, whenever you make an ability check, saving throw, or attack roll that you dislike, make a note of your original result, then roll again and use the second result. The next time the targeted creature would make an ability check, saving throw, or attack roll, it automatically uses your original result instead and the spell ends. Once you select a roll to hold in reserve you cannot replace it with a different roll."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Lucky Stars",
+      "source": "jbassin",
+      "level": 3,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a rabbit's foot or other lucky charm"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          },
+          "concentration": true
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You pluck three small pockets of fate out of the air, for use at a later time. They appear as a triangle of sparkling stars, orbiting your head. Whenever you make an attack roll, an ability check, or a saving throw, you can spend expend one star to roll an additional {@damage d20}. You can choose to expend one of your stars after you roll the die, but before the outcome is determined. You choose which of the {@damage d20}s is used for the attack roll, ability check, or saving throw.",
+        "You can also expend one star when an attack roll is made against you. Roll a {@damage d20}, and then choose whether the attack uses the attacker's roll or yours."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lucky Ward",
+      "source": "jbassin",
+      "level": 2,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You manipulate the threads of fate to your favor in the area around you. This creates a 30-foot-radius dome centered on you in which your allies are luckier and your enemies are disfavored. Each ally in the aura adds {@damage 1d4} to its attack rolls and saving throws. Enemies must subtract {@damage 1d4} from their attack rolls and saving throws while they are inside the aura."
+      ]
+    },
+    {
+      "name": "Pendulum",
+      "level": 3,
+      "school": "mercuromancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a small pendulum or metronome made of brass and rosewood worth 10 gp",
+          "cost": 10
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTp": true
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You bend fate to move in predictable patterns. The target must succeed on a Wisdom saving throw or else for the duration of the spell it doesn't make {@damage d20} die rolls but instead follows the sequence 20, 1, 19, 2, 18, 3, 17, 4..."
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Rearrange Fate",
+      "source": "jbassin",
+      "level": 3,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "two grains of salt"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hours",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You grant a willing creature to take control of their own fate. The creature rolls two {@damage d20}s and notes the rolls. The creature must use those two results for its next two {@damage d20} rolls during the spell's duration, but it can choose the order in which the results are used."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 3rd level, you can affect one additional creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reflective Defense",
+      "source": "jbassin",
+      "level": 8,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "entries": [
+        "As luck would have it, all magic just happens to bounce off you until the next turn. If you would take damage during that time, the damage is reduced to 0, and if the source of the damage was another creature, that creature takes the full amount of the damage as force damage instead."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sphere of Preservation",
+      "level": 6,
+      "school": "mercuromancy",
+      "source": "jbassin",
+      "meta": {
+        "ritual": false
+      },
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You remove luck and randomness to leave only order in a sphere around you. All ability checks, saving throws, attack rolls, and damage rolls that take place in a 30-foot-radius sphere around you automatically roll their average value, rounded down."
+      ]
+    },
+    {
+      "name": "Sphere of Ruin",
+      "source": "jbassin",
+      "level": 7,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "an iridescent gem worth 500 gp",
+          "cost": 500
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You summon a sliver of Ruin and choose a creature you can see to be its target. The sliver is a 1-foot-radius sphere of chaotic, swirling color that appears adjacent to you. At the end of each of your turns, the sphere moves 30 feet toward its target along the shortest path. The sliver can fly and can pass through creatures and solid objects. Creatures that occupy the same space as the sphere at any time must make a Charisma saving throw. On a failure, roll {@dice 1d10} on the table below to discover its effect on their behavior.",
+        "You can change the sliver's target to another creature you can see as a bonus action; the sliver then pursues that target.",
+        {
+          "type": "table",
+          "colLabels": [
+            "{@dice d10}",
+            "Behavior"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "exact": 1
+                }
+              },
+              "Creature must expend the entirety of its movement moving in a straight line in a random direction."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 2,
+                  "max": 6
+                }
+              },
+              "The creature is {@condition stunned} until the start of your next turn."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 7,
+                  "max": 8
+                }
+              },
+              "The creature immediately makes a melee attack against the nearest creature within its reach."
+            ],
+            [
+              {
+                "type": "cell",
+                "roll": {
+                  "min": 9,
+                  "max": 10
+                }
+              },
+              "The creature is unaffected."
+            ]
+          ]
+        }
+      ],
+      "savingThrow": [
+        "charisma"
+      ],
+      "conditionInflict": [
+        "incapacitated",
+        "stunned"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Take Me Instead",
+      "source": "jbassin",
+      "level": 2,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "When you cast this spell, touch the corpse of a creature you knew well that died within the last hour. Make a DC 12 Charisma ({@skill Persuasion}) ability check. You have advantage in this check if the target creature was a family member or a lover of yours. On a success, the creature is resurrected with 1 hit point and you are reduced to 0 hit points, making death saving throws as usual. For the next hour, you cannot be stabilized or healed, and if you die, you cannot be resurrected by any spell of level 4 or lower."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "HL"
+      ]
+    }
+  ]
+}

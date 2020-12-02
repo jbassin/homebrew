@@ -1,0 +1,1330 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "jbassin",
+        "abbreviation": "TFC",
+        "full": "The Floating Cup",
+        "color": "228b22",
+        "authors": [
+          "Josh Bassin"
+        ],
+        "convertedBy": [
+          "Josh Bassin"
+        ],
+        "version": "0.4.0",
+        "url": "",
+        "targetSchema": "1.1.2"
+      }
+    ],
+    "spellSchools": {
+      "antillurgy": {
+        "full": "Antillurgy",
+        "short": "Anti.",
+        "color": "c0392b"
+      }
+    },
+    "dateAdded": 1598810863
+  },
+  "spell": [
+    {
+      "name": "Almonk's Arcane Drain",
+      "source": "jbassin",
+      "level": 3,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "A silvery ray of energy shoots from your hand to one creature you can see, ripping a hole in their connection to the Weave. That creature must make a saving throw in your spellcasting ability (e.g. if a Wizard casts this spell they must make an Intelligence saving throw, if a Warlock casts it it's a Charisma saving throw, etc.) On a failure, the creature loses one 4th-level spell slot as if the spell was cast. If it has no 4th-level spells, it loses a 3rd-level slot instead; if it has no 3rd-level slot, it loses a 2nd-level spell; and so on. Arcane Drain has no effect on creatures that don't have spell slots."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "Arcane Drain can be cast using a spell slot of 3rd level or higher. It wipes out a spell slot one level higher than the slot used to cast the spell."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Almonk's Arcane Siphon",
+      "source": "jbassin",
+      "level": 3,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1,
+            "upTo": true
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "A small, black orb hovers around your head, seemingly drawing magical effects into it. The next time you're targeted with a single-target spell of third level or lower, the spell is instead drawn into the orb. You regain one spell slot of a level one lower than the spell that was caught. If the spell was a first level spell, you do not regain a slot. The orb cannot catch cantrips, and once the orb has caught a spell the spell ends."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "Arcane Siphon can be cast using a spell slot of 3rd level or higher. It can catch spells of equal or lower level to the spell slot expended to cast it."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Almonk's Retribution",
+      "source": "jbassin",
+      "level": 5,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a pinch of ash from a cremated spellcaster"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You ignite the Weave in a 30-foot-radius sphere centered on a point you can see. For the duration of the spell, any creature casting a spell within the area of the sphere takes {@damage 6d6} fire damage, or half damage with a successful Constitution saving throw. Their spell successfully finishes casting regardless of their save."
+      ],
+      "damageInflict": [
+        "fire"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Antimagic Shroud",
+      "source": "jbassin",
+      "level": 1,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": false,
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A black, translucent shroud surrounds your body, seemingly absorbingly light into it. The first time you take damage from a spell, the shroud explodes towards the caster and the spell ends. The creature who targeted you must make a Dexterity saving throw, taking {@damage 2d10} necrotic damage on a failed save, or half as much damage on a successful one."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d10} for each slot level above 1st."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Arcane Censure",
+      "source": "jbassin",
+      "level": 9,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a diamond worth 1,000 gp",
+          "cost": 1000
+        }
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You attempt to completely cut off a creature from the Weave. The creature must make a saving throw in their spellcasting ability against your spell save DC. On a failure, they lose all spellcasting ability, including innate spellcasting. Only a Wish can undo the effects of this spell."
+      ]
+    },
+    {
+      "name": "Arcane Interdiction",
+      "source": "jbassin",
+      "level": 4,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You stress the Weave in a 60-foot-radius sphere around you, making it harder to cast spells. When you move, the sphere moves with you. Any creature in the area, including you, must make a Constitution saving throw against your spell save DC when they try to cast a spell; if the saving throw fails, the spell also fails (it has no effect) and the spell slot is expended. A creature concentrating on a spell while within the sphere must make a DC 10 Constitution saving throw or it loses concentration. You are exempt from this effect for the sake of maintaining this spell."
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Containment Orbs",
+      "source": "jbassin",
+      "level": 7,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You are surrounded by three small orbs of multicolored force that can absorb certain spells. When you cast containment orbs, you choose a school of magic for each orb (e.g., abjuration, evocation, planara). Any spells of the appropriate type that would affect you are absorbed by the corresponding orb and have no further effect.",
+        "Each orb can absorb only one spell. Once an orb has absorbed a spell, you can use an action to cause it to explode. All creatures within 20 feet of you take {@dice 2d6} damage per level of the spell the orb absorbed, or half damage with a successful Dexterity saving throw. The DC for the saving throw is set by you, not by the spell's original caster.",
+        "An orb is destroyed after it has exploded. All orbs disappear with no further effect when the spell ends."
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Disperse Magic",
+      "source": "jbassin",
+      "level": 2,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "which you take when you are forced to make a saving throw against a spell or magical effect"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "You redirect some of the magical energy targeting you back into the Weave. You gain advantage on the saving throw against the spell or magical effect. Additionally, if the effect allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, or half damage if you fail."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Divine Regression",
+      "level": 2,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": false,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "jbassin",
+      "entries": [
+        "You reverse the flow of magic in a creature, removing their ability to heal. Make a melee spell attack against a creature you can reach. On a hit, the creature takes {@damage 4d8} necrotic damage, and is blocked from healing. Instead of restoring hitpoints, the creature takes necrotic damage equal to the amount normally healed while afflicted. The effect ends if the duration of the spell ends, or the target has a spell like remove curse or stronger used on them."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For every level above 2nd, the creature takes an additional {@damage 1d8} necrotic damage on a hit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Sink",
+      "source": "jbassin",
+      "level": 1,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hours",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You form an elemental sink on a creature you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the damage type of the spell. Until the spell ends, each time you attack the Weave empties magical energy into the creature, dealing an extra {@damage 1d6} damage of the type chosen to the target.",
+        "If you roll a 6 on the damage die of this spell, the creature suffers an additional effect depending on the damage type chosen:",
+        {
+          "type": "list",
+          "items": [
+            "{@b Acid:} One creature within 5 feet of the target takes acid damage equal to your spellcasting modifier.",
+            "{@b Cold:} The target has his speed reduced by 10 until the end of its next turn.",
+            "{@b Fire:} The targets radiate 10 feet bright light until the end of its next turn and the next attack against it has advantage.",
+            "{@b Lightning:} The target cannot take reactions until the end of its next turn.",
+            "{@b Thunder:} The target is pushed 10 ft. away from you."
+          ]
+        },
+        "If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to move the sink to a new creature."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ]
+    },
+    {
+      "name": "Festering Slick",
+      "source": "jbassin",
+      "level": 3,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "concentration": true,
+          "duration": {
+            "amount": 1,
+            "type": "minute",
+            "upTo": true
+          }
+        }
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "entries": [
+        "You touch a melee weapon and imbue it with slick, antillurgic energy. The first time that weapon successfully hits during this spell's duration, the slick creeps off the weapon and into its target's wounds. The attack deals an extra {@damage 3d6} necrotic damage to the target. Additionally its flesh festers and refuses to repair. Until the spell ends, the target cannot regain hit points."
+      ],
+      "entriesHigherLevel": [
+        {
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the necrotic damage increases by {@scaledice 3d6|3-9|1d6} per spell slot level above 3rd."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Focus Break",
+      "source": "jbassin",
+      "level": 5,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "amount": 30,
+          "type": "feet"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "entries": [
+        "You shoot a ripple of antimagic energy at a creature maintaining concentration on a spell within range. The energy does no damage, but forces the creature to make a Constitution saving throw to maintain concentration. The DC for the check is 12 + your spellcasting ability modifier."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the DC increases by one per spell slot level above 5th."
+          ]
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Macabredanse",
+      "source": "jbassin",
+      "level": 0,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 10
+        }
+      },
+      "components": {
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minutes",
+            "amount": 10
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "This spell is a minor magical trick that novice antillurgists use for practice. You create one of the following effects within range:",
+        {
+          "type": "list",
+          "items": [
+            "You create an instantanous, harmless sensory effect, such as the flickering of lit candles, a puff of cold wind, a cacophony of unintelligible disembodied whispers, or the faint odor of decay.",
+            "Choose the bones or corpse of a Tiny creature within range. Your spell wraps threads of the Weave around it, raising it as an undead creature with CR 0. You do not control the creature, but it is friendly to you and can understand you.",
+            "You instantly make a flower wither, meat spoil, or milk curdle."
+          ]
+        },
+        "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+      ]
+    },
+    {
+      "name": "Mystic Negation",
+      "source": "jbassin",
+      "level": 5,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a dark, pulsing, 1-foot-diameter sphere of antimagic that hangs in the air at a point you can see within 60 feet of you. It automatically negates every spell (including your own) of 3rd level or lower cast within 30 feet of the sphere. Spells of level 5 and higher are not affected. The sphere disappears after it counters three spells or when the spell's duration runs out.",
+        "At the beginning of your turn, you can move the sphere up to 20 feet as a bonus action."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 5th level, the maximum spell level the sphere can negate increases by one."
+          ]
+        }
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Phlogistic Shield",
+      "source": "jbassin",
+      "level": 4,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a glass lens"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You conjure a thin lens of gaseous phlogiston, 10 feet wide, within 30 feet of you. The lens protects those behind it from magic; any spell of 4th level or lower that requires a clear path through the lens is stopped entirely. The lens doesn't interfere with spells you cast, and it doesn't block area effects. For example, a fireball couldn't be aimed directly through the lens, but if it was set off immediately in front of the lens, the blast would still affect people on the other side of the lens and within the fireball's radius. You can spend a bonus action to move the lens to any point within 30 feet of you."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "If phlogistic shield is cast using a spell slot higher than 4th level, the lens protects against spells of equal or lower level than the spell slot you used."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Poisoned Backflow",
+      "source": "jbassin",
+      "level": 2,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a dark thread"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You touch a creature and poison the thread that attaches them to the Weave. It becomes cursed unless it makes a successful Wisdom saving throw. While cursed, the creature takes {@damage 3d6} necrotic damage whenever it restores hit points to another creature with a spell.",
+        "The curse can be lifted by magic that removes a curse."
+      ],
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Reduce Resistivity",
+      "source": "jbassin",
+      "level": 5,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You wear down the magical defenses of a creature you can see. The creature must make a Constitution saving throw. If the saving throw fails, the creature has disadvantage on saving throws against magic for the duration of this spell."
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Return Spell",
+      "source": "jbassin",
+      "level": 7,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a bent willow wrapped with strands of gut"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You weave a ward of antimagic protection about one willing creature. That creature gains the ability to use its reaction to turn one spell that allows a saving throw back at the spell's caster.",
+        "The target of the reflected spell makes a saving throw against it. If the save is successful, the spell rebounds again, back to the original target. That creature then makes its own saving throw, and if successful, the spell rebounds again. The spell continues to rebound between the original caster and the original target until one or the other fails its saving throw; at that point, the spell takes full effect and stops rebounding. If this hasn't happened by the time six saving throws have been made (three from each target), the spell dissipates harmlessly.",
+        "In the case of an area effect spell, only that portion of the spell that would affect the warded creature is volleyed; the rest of it goes off and affects other creatures in the original target area as normal. If several creatures in the area of effect are warded by this spell, the original caster could take the effect of the spell several times over."
+      ]
+    },
+    {
+      "name": "Sapping Lightning",
+      "source": "jbassin",
+      "level": 7,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "feet",
+          "amount": 150
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of blackened amber"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You shoot a beam of antillurgic energy from the tips of your fingers. Each creature in the line must make a Dexterity saving throw. If the saving throw fails, the creature takes {@dice 8d8} lightning damage and loses its highest-level unspent spell slot. On a successful save, the creature takes half damage and doesn't lose a spell slot. Creatures with innate spellcasting lose one use of their highest-level spell instead."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "For each spell slot used higher than 7th level, the damage increases by {@scaledice 8d8|7-9|1d8}."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "lightning"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Thaumaturgic Inhibition",
+      "source": "jbassin",
+      "level": 6,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You increase the difficulty of casting spells in a 60-foot radius sphere around yourself. Any spellcaster that casts a spell within 60 feet of you must make an ability check using their spell-casting ability against your spell saving throw DC. If the check fails, the spell takes effect as if it were cast using the minimum slot level that could be used to cast it rather than the slot that was actually used. In addition, if the spell deals damage it has a âˆ’1 penalty on each die, to a minimum of one."
+      ]
+    },
+    {
+      "name": "Thaumaturgic Obstruction",
+      "source": "jbassin",
+      "level": 6,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You increase the difficulty of casting spells in a 60-foot radius sphere around yourself. Spellcasters in the sphere require additional time to cast their spells: spells that take a bonus action to cast now require 1 action; 1 action increases to 1 round; and other spells have their casting times doubled. The sphere of effect moves with you, and does not affect you."
+      ]
+    },
+    {
+      "name": "Zone of Minimization",
+      "source": "jbassin",
+      "level": 8,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You create a zone of antillurgic energy in a 20-foot-radius sphere around a point you can see. All damage caused by a creature within the zone is minimized; each damage die is treated as having rolled a 1."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    }
+  ]
+}
