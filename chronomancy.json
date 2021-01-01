@@ -550,6 +550,9 @@
           "concentration": true
         }
       ],
+      "meta": {
+        "ritual": true
+      },
       "classes": {
         "fromClassList": [
           {
@@ -1558,6 +1561,69 @@
       },
       "entries": [
         "You form a rip in time into the shape of a wall within range. You can make a straight wall up to 60 feet long, 20 feet high, and 1 foot thick, or a circular wall up to 20 feet high, 1 foot thick, and forming a closed circle 20 feet in diameter.  Nonmagical ranged attacks that cross the wall vanish into time with no other effect. Ranged spell attacks and ranged weapon attacks made with magical weapons that pass through the wall are made with disadvantage. A creature that intentionally enters or passes through the wall is affected as if they had just failed their initial saving throw against the {@spell slow|phb} spell."
+      ]
+    },
+    {
+      "name": "Lyrr’s Chronomantic Shell",
+      "level": 3,
+      "school": "chronomancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "s": true,
+        "v": true,
+        "m": "A pocket watch set to a certain time"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "nario",
+      "entries": [
+        "Create a shell centered to a relative point (like a ship’s mask). From this point, there is a sphere with a radius of 100 ft. Within this sphere, the climate is sent back in time to a climate of the caster’s choice.",
+        "For example, a caster can place this shell around a ship to give it calm waters for 8 hours, no matter the surrounding."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "The radius of the shell increases by 100ft for every spell slot used above 3rd."
+          ]
+        }
       ]
     }
   ]

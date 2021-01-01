@@ -1227,6 +1227,77 @@
       "miscTags": [
         "HL"
       ]
+    },
+    {
+      "name": "Gift of the Archmage",
+      "source": "nario",
+      "level": 5,
+      "school": "mercuromancy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 5
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a palm sized stone of unrefined |SPECIAL MAGIC METAL THAT IS GREEN| ore that costs 1000 gp OR MARKET PRICE FOR THAT SIZE "
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You use the stone in your hand as a conduit for fate, causing it to emit a blue glow. Using the stone, you sketch out complicated arcane sigil in the air. Once fully drawn, the sigil will shrink into a tiny sphere, changing in color to pure white. This singularity will go into a willing creature, imbuing the creature with distilled energy from weave.",
+        "This creature will gain the ability to cast a 4th level spell or lower that is known to you, and in the wizard spell book. This spell will use the creature’s intelligence modifier, and can only be cast once.",
+        "The strain of distilling a spell into a gift, will cause great fatigue to the original spell caster. The spell caster suffers one point of exhaustion, and cannot cast this spell again for 24 hours."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the distilled spell singularity can hold a greater spell level for each slot level above 5th. However, the strain increases, and the caster suffers an additional level of exhaustion for every spell slot above 5th."
+          ]
+        }
+      ]
     }
   ]
 }
