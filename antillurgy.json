@@ -1325,6 +1325,68 @@
       "miscTags": [
         "SGT"
       ]
+    },
+    {
+      "name": "Shield of Cunning",
+      "level": 2,
+      "school": "antillurgy",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true,
+        "v": true,
+        "m": "Polished Mithril"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 8
+          },
+          "concentration": false
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      },
+      "source": "nario",
+      "entries": [
+        "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Intelligence modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+        "Overload: The creature may choose to overload the shield as a reaction, causing a psychic shockwave to emit 5 ft from the creature. All creatures in range must make an Intelligence saving throw against the spell caster’s DC, or be stunned until the end of their next turn. This will expend the shield."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "The radius of the shell increases by 100ft for every spell slot used above 3rd."
+          ]
+        }
+      ]
     }
   ]
 }

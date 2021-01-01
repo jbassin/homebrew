@@ -1704,6 +1704,76 @@
       "miscTags": [
         "SGT"
       ]
+    },
+    {
+      "name": "Bending Bolt",
+      "source": "nario",
+      "level": 4,
+      "school": "planara",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "meta": {
+        "ritual": false
+      },
+      "entries": [
+        "A stroke of lightning forming a line 120 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 8d6} lightning damage on a failed save, or half as much damage on a successful one.",
+        "The spell caster can force the bolt to bend to its will, causing the lightning to bend at a point where the angle does not exceed more than 90˚."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the caster can add an inflection point for every spell slot above 4th. Every inflection point must be at least 5 ft apart."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "lightning"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Seeker",
+            "source": "SW"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      }
     }
   ]
 }
